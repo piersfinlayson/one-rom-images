@@ -1,0 +1,18 @@
+{
+    "latest": "0.5.2",
+    "releases": [
+        {
+            "version": "0.5.2",
+            "boards": [
+                {
+                    "name": "ice-24-usb-h",
+                    "mcus": [
+                        {
+                            "name": "f446rc"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

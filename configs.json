@@ -20,6 +20,8 @@
         "configs/bank-vic20-char-fun.json",
         "configs/set-1541.json",
         "configs/set-c64.json",
-        "configs/set-vic20-pal.json"
+        "configs/set-vic20-pal.json",
+        "configs/ti994a.json",
+        "configs/coco2.json"
     ]
 }

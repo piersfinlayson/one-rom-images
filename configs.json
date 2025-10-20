@@ -1,6 +1,25 @@
 {
     "version": 1,
     "configs": [
-        "configs/c64.json"
+        "configs/c64.json",
+        "configs/c64-inc-destestmax.json",
+        "configs/28-c64c.json",
+        "configs/vic20-ntsc.json",
+        "configs/vic20-pal.json",
+        "configs/atari800xl.json",
+        "configs/pet-4-40-50.json",
+        "configs/1541.json",
+        "configs/28-1541ii.json",
+        "configs/2040.json",
+        "configs/4040.json",
+        "configs/ieee-diag.json",
+        "configs/bank-1541.json",
+        "configs/bank-c64-char.json",
+        "configs/bank-c64-char-fun.json",
+        "configs/bank-vic20-char.json",
+        "configs/bank-vic20-char-fun.json",
+        "configs/set-1541.json",
+        "configs/set-c64.json",
+        "configs/set-vic20-pal.json"
     ]
 }

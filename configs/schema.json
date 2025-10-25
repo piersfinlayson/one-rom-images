@@ -48,9 +48,7 @@
     },
     "version": {
       "description": "Configuration format version.  Currently only \"1\" is supported",
-      "type": "integer",
-      "format": "uint32",
-      "minimum": 0
+      "const": 1
     }
   },
   "required": [

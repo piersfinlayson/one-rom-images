@@ -47,7 +47,7 @@
       }
     },
     "version": {
-      "description": "Configuration format version.  Currently only \"1\" is supported",
+      "description": "Configuration format version.",
       "const": 1
     }
   },
@@ -248,72 +248,72 @@
         {
           "description": "512B EPROM with multiple supply voltages - 512 bytes, 24-pin package",
           "type": "string",
-          "const": "Rom2704"
+          "const": "2704"
         },
         {
           "description": "1KB EPROM with multiple supply voltages - 1024 bytes, 24-pin package",
           "type": "string",
-          "const": "Rom2708"
+          "const": "2708"
         },
         {
           "description": "2KB mask ROM with 3 configurable CS lines - 2048 bytes, 24-pin package",
           "type": "string",
-          "const": "Rom2316"
+          "const": "2316"
         },
         {
           "description": "2KB EPROM with fixed active-low CE/OE - 2048 bytes, 24-pin package",
           "type": "string",
-          "const": "Rom2716"
+          "const": "2716"
         },
         {
           "description": "4KB mask ROM with 2 configurable CS lines - 4096 bytes, 24-pin package",
           "type": "string",
-          "const": "Rom2332"
+          "const": "2332"
         },
         {
           "description": "4KB EPROM with fixed active-low CE and shared OE/VPP - 4096 bytes, 24-pin package",
           "type": "string",
-          "const": "Rom2732"
+          "const": "2732"
         },
         {
           "description": "8KB mask ROM with 1 configurable CS line - 8192 bytes, 24-pin package",
           "type": "string",
-          "const": "Rom2364"
+          "const": "2364"
         },
         {
           "description": "8KB EPROM with fixed active-low CE/OE - 8192 bytes, 28-pin package",
           "type": "string",
-          "const": "Rom2764"
+          "const": "2764"
         },
         {
           "description": "16KB mask ROM with 3 configurable CS lines - 16384 bytes, 28-pin package",
           "type": "string",
-          "const": "Rom23128"
+          "const": "23128"
         },
         {
           "description": "16KB EPROM with fixed active-low CE/OE - 16384 bytes, 28-pin package",
           "type": "string",
-          "const": "Rom27128"
+          "const": "27128"
         },
         {
           "description": "32KB mask ROM with 2 configurable CS lines - 32768 bytes, 28-pin package",
           "type": "string",
-          "const": "Rom23256"
+          "const": "23256"
         },
         {
           "description": "32KB EPROM with fixed active-low CE/OE - 32768 bytes, 28-pin package",
           "type": "string",
-          "const": "Rom27256"
+          "const": "27256"
         },
         {
           "description": "64KB mask ROM with 2 configurable CS lines - 65536 bytes, 28-pin package",
           "type": "string",
-          "const": "Rom23512"
+          "const": "23512"
         },
         {
           "description": "64KB EPROM with fixed active-low CE/OE - 65536 bytes, 28-pin package",
           "type": "string",
-          "const": "Rom27512"
+          "const": "27512"
         }
       ]
     },

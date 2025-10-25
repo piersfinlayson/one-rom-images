@@ -1,6 +1,7 @@
 {
     "version": 1,
     "configs": [
+        "configs/blank.json",
         "configs/c64.json",
         "configs/c64-inc-destestmax.json",
         "configs/28-c64c.json",

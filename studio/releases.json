@@ -4,8 +4,8 @@
     "x86_64-pc-windows-msvc": "0.1.1",
     "x86_64-apple-darwin": "0.1.0",
     "aarch64-apple-darwin": "0.1.0",
-    "x86_64-unknown-linux-gnu": "0.1.0",
-    "aarch64-unknown-linux-gnu": "0.1.0",
+    "x86_64-unknown-linux-gnu": "0.1.1",
+    "aarch64-unknown-linux-gnu": "0.1.1",
     "universal-apple-darwin": "0.1.1"
   },
   "releases": [
@@ -22,6 +22,16 @@
           "target": "x86_64-pc-windows-msvc",
           "filename": "onerom-studio_0.1.1_x64-setup.exe",
           "sha256": "785ea0302b6d2322782e0f61655e1a4a9b367d0f397892a4eaac38f2267a15ca"
+        },
+        {
+          "target": "x86_64-unknown-linux-gnu",
+          "filename": "onerom-studio_0.1.1_amd64.deb",
+          "sha256": "bb3e734bfa8ff55cefec83762fff9fb82c9c084480b669750f046a4f833d0866"
+        },
+        {
+          "target": "aarch64-unknown-linux-gnu",
+          "filename": "onerom-studio_0.1.1_arm64.deb",
+          "sha256": "02777a7d7f76fd681f88f76805b9adf4ad0dd88a29fdc67071fdeb4a5e70359a"
         }
       ]
     },

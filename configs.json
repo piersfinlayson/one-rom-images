@@ -27,7 +27,7 @@
         "configs/pincoder-2021-sys7-1-10.json",
         "configs/pincoder-2021-sys7-11-12.json",
         "configs/pincoder-2021-sys7-all.json",
-        "configs/pincoder-2021-sys6a-all.json",
-        "configs/pincoder-2021-sys346-all.json"
+        "configs/pincoder-2021-sys6a.json",
+        "configs/pincoder-2021-sys346.json"
     ]
 }

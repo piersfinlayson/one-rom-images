@@ -7,13 +7,13 @@
     "latest_app_version": {
       "description": "Latest application version available",
       "type": "string",
-      "default": "0.1.2"
+      "default": "0.1.1"
     },
     "link_urls": {
       "description": "Links used by the application within the UI",
       "$ref": "#/$defs/LinkUrls",
       "default": {
-        "app_update": "https://onerom.org/studio/",
+        "app_update": "https://onerom.org/studio/#downloads",
         "github_issue": "https://github.com/piersfinlayson/one-rom/issues",
         "linux_udev": "https://onerom.org/web/#linux",
         "one_rom": "https://onerom.org",
@@ -73,7 +73,7 @@
         "app_update": {
           "description": "Application update page",
           "type": "string",
-          "default": "https://onerom.org/studio/"
+          "default": "https://onerom.org/studio/#downloads"
         },
         "github_issue": {
           "description": "One ROM Studio GitHub issues page",

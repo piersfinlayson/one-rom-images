@@ -71,11 +71,17 @@
         <details id="rom-configs">
             <summary>ROM Configurations</summary>
             <p>
-                Stock ROM configurations are defined by JSON files.
+                Stock One ROM ROM configurations are defined by JSON files.
                 <ul>
                     <li><a href="/configs/schema.json">Schema</a></li>
                     <li><a href="/configs.json">Manifest</a></li>
                 </ul>
+            </p>
+            <p>
+                You can select from the list of available configurations below within <a href="https://onerom.org/studio/" target="_blank">One ROM Studio</a>.
+            </p>
+            <p>
+                Alternatively, you can use the <a href="/configs/schema.json">schema</a> and existing configurations as a reference to create your own custom ROM configurations.  You can then load these into <a href="https://onerom.org/studio/" target="_blank">One ROM Studio</a> to create custom firmware images.
             </p>
             <p>
                 Available ROM configurations:
@@ -175,6 +181,33 @@
         </style>
 
         <script>
+            // 
+            // Handle # links
+            //
+            function expandDetailsForHash() {
+                const hash = window.location.hash;
+                if (!hash) return;
+                
+                const target = document.querySelector(hash);
+                if (!target) return;
+                
+                // Find parent <details> element
+                const details = target.closest('details');
+                if (details) {
+                    details.open = true;
+                }
+            }
+
+            // Run on page load
+            expandDetailsForHash();
+
+            // Run when hash changes (e.g., clicking anchor links)
+            window.addEventListener('hashchange', expandDetailsForHash);
+
+            //
+            // Handle firmware, configs, etc
+            //
+
             // Fetch and display firmware versions with boards and MCUs
             fetch('/releases.json')
                 .then(response => response.json())

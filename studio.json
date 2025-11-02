@@ -25,6 +25,6 @@
   },
   "paths": {
     "firmware_releases": "https://images.onerom.org/releases/",
-    "rom_configs": "https://images.onerom.org/configs/"
+    "rom_configs": "https://images.onerom.org/"
   }
 }

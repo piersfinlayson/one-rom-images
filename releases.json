@@ -3,6 +3,18 @@
     "latest": "0.5.3",
     "releases": [
         {
+            "version": "0.5.4",
+            "path": "v0.5.4",
+            "boards": [
+                {
+                    "name": "fire-24-usb-b",
+                    "mcus": [
+                        {"name": "rp2350"}
+                    ]
+                }
+            ]
+        },
+        {
             "version": "0.5.3",
             "path": "v0.5.3",
             "boards": [

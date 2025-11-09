@@ -19,7 +19,7 @@
         {
           "target": "universal-apple-darwin",
           "filename": "One ROM Studio_0.1.2.dmg",
-          "sha256": "5ee05e02b271f06ff178a6f567f90147be978d37ab1e68d52a6c0d96c1f07167"
+          "sha256": "c75fcf1b8c298410df32bcdd002a834d953c69be0fbcb8123434bf7d661d667c"
         },
         {
           "target": "x86_64-pc-windows-msvc",

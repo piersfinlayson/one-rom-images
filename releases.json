@@ -1,7 +1,103 @@
 {
     "version": 1,
-    "latest": "0.5.4",
+    "latest": "0.5.5",
     "releases": [
+        {
+            "version": "0.5.5",
+            "path": "v0.5.5",
+            "boards": [
+                {
+                    "name": "fire-24-a",
+                    "mcus": [
+                        {"name": "rp2350"}
+                    ]
+                },
+                {
+                    "name": "fire-24-usb-b",
+                    "mcus": [
+                        {"name": "rp2350"}
+                    ]
+                },
+                {
+                    "name": "ice-24-d",
+                    "mcus": [
+                        {"name": "f401rb"},
+                        {"name": "f401rc"},
+                        {"name": "f401re"},
+                        {"name": "f405rg"},
+                        {"name": "f411rc"},
+                        {"name": "f411re"},
+                        {"name": "f446rc"},
+                        {"name": "f446re"}
+                    ]
+                },
+                {
+                    "name": "ice-24-e",
+                    "mcus": [
+                        {"name": "f401rb"},
+                        {"name": "f401rc"},
+                        {"name": "f401re"},
+                        {"name": "f405rg"},
+                        {"name": "f411rc"},
+                        {"name": "f411re"},
+                        {"name": "f446rc"},
+                        {"name": "f446re"}
+                    ]
+                },
+                {
+                    "name": "ice-24-f",
+                    "mcus": [
+                        {"name": "f401rb"},
+                        {"name": "f401rc"},
+                        {"name": "f401re"},
+                        {"name": "f405rg"},
+                        {"name": "f411rc"},
+                        {"name": "f411re"},
+                        {"name": "f446rc"},
+                        {"name": "f446re"}
+                    ]
+                },
+                {
+                    "name": "ice-24-g",
+                    "mcus": [
+                        {"name": "f401rb"},
+                        {"name": "f401rc"},
+                        {"name": "f401re"},
+                        {"name": "f405rg"},
+                        {"name": "f411rc"},
+                        {"name": "f411re"},
+                        {"name": "f446rc"},
+                        {"name": "f446re"}
+                    ]
+                },
+                {
+                    "name": "ice-24-usb-h",
+                    "mcus": [
+                        {"name": "f401rb"},
+                        {"name": "f401rc"},
+                        {"name": "f401re"},
+                        {"name": "f405rg"},
+                        {"name": "f411rc"},
+                        {"name": "f411re"},
+                        {"name": "f446rc"},
+                        {"name": "f446re"}
+                    ]
+                },
+                {
+                    "name": "ice-28-a",
+                    "mcus": [
+                        {"name": "f401rb"},
+                        {"name": "f401rc"},
+                        {"name": "f401re"},
+                        {"name": "f405rg"},
+                        {"name": "f411rc"},
+                        {"name": "f411re"},
+                        {"name": "f446rc"},
+                        {"name": "f446re"}
+                    ]
+                }
+            ]
+        },
         {
             "version": "0.5.4",
             "path": "v0.5.4",

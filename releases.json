@@ -19,6 +19,12 @@
                     ]
                 },
                 {
+                    "name": "fire-28-a",
+                    "mcus": [
+                        {"name": "rp2350"}
+                    ]
+                },
+                {
                     "name": "ice-24-d",
                     "mcus": [
                         {"name": "f401rb"},

@@ -3,24 +3,6 @@
     "latest": "0.5.10",
     "releases": [
         {
-            "version": "0.6.1",
-            "path": "v0.6.1",
-            "boards": [
-                {
-                    "name": "fire-24-c",
-                    "mcus": [
-                        {"name": "rp2350"}
-                    ]
-                },
-                {
-                    "name": "ice-24-f",
-                    "mcus": [
-                        {"name": "f411re"}
-                    ]
-                }
-            ]
-        },
-        {
             "version": "0.6.0",
             "path": "v0.6.0",
             "boards": [

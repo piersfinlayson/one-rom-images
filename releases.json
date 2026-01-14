@@ -3,11 +3,11 @@
     "latest": "0.5.10",
     "releases": [
         {
-            "version": "0.6.0a",
-            "path": "v0.6.0a",
+            "version": "0.6.1",
+            "path": "v0.6.1",
             "boards": [
                 {
-                    "name": "fire-24-d",
+                    "name": "fire-24-c",
                     "mcus": [
                         {"name": "rp2350"}
                     ]

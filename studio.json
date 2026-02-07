@@ -26,5 +26,20 @@
   "paths": {
     "firmware_releases": "https://images.onerom.org/",
     "rom_configs": "https://images.onerom.org/"
-  }
+  },
+  "firmware_build_compatibility": [
+    {
+      "app_version": {
+        "major": 0,
+        "minor": 1,
+        "patch": 12
+      },
+      "max_buildable_firmware_version": {
+        "major": 0,
+        "minor": 6,
+        "patch": 2,
+        "build": 0
+      }
+    }
+  ]
 }

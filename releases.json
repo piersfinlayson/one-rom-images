@@ -171,12 +171,6 @@
                     ]
                 },
                 {
-                    "name": "fire-28-a",
-                    "mcus": [
-                        {"name": "rp2350"}
-                    ]
-                },
-                {
                     "name": "fire-24-c",
                     "mcus": [
                         {"name": "rp2350"}

@@ -3,7 +3,7 @@
     "latest": "0.6.3",
     "releases": [
         {
-            "version": "0.6.4-beta",
+            "version": "0.6.4",
             "path": "v0.6.4",
             "boards": [
                 {

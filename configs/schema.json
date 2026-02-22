@@ -378,6 +378,11 @@
                         }
                     ]
                 },
+                "force_16_bit": {
+                    "description": "Optional Force 16 bit mode.  Only supported on One ROM 40, and if set\nthis _disables_ of the /BYTE pin to indicate 8-bit mode, forcing the\nROM to always operate in 16-bit mode.  This is a higher performance\nmode, as the algorithm can read the address lines 33% more frequently,\nbut obviously disables the used of 8-bit mode.",
+                    "type": "boolean",
+                    "default": false
+                },
                 "overclock": {
                     "description": "Whether overclocking is enabled",
                     "type": [
@@ -386,8 +391,13 @@
                     ],
                     "default": null
                 },
+                "rom_dma_preload": {
+                    "description": "Optional DMA ROM preload enable/disable",
+                    "type": "boolean",
+                    "default": false
+                },
                 "serve_mode": {
-                    "description": "Option PIO/CPU override",
+                    "description": "Optional PIO/CPU override",
                     "anyOf": [
                         {
                             "$ref": "#/$defs/FireServeMode"

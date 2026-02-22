@@ -1,13 +1,44 @@
 {
   "version": 1,
   "latest": {
-    "x86_64-pc-windows-msvc": "0.1.12",
-    "x86_64-unknown-linux-gnu": "0.1.12",
-    "aarch64-unknown-linux-gnu": "0.1.12",
-    "universal-apple-darwin": "0.1.12",
-    "aarch64-pc-windows-msvc": "0.1.12"
+    "x86_64-pc-windows-msvc": "0.1.13",
+    "x86_64-unknown-linux-gnu": "0.1.13",
+    "aarch64-unknown-linux-gnu": "0.1.13",
+    "universal-apple-darwin": "0.1.13",
+    "aarch64-pc-windows-msvc": "0.1.13"
   },
   "releases": [
+    {
+      "version": "0.1.13",
+      "path": "v0.1.13",
+      "platforms": [
+        {
+          "target": "aarch64-pc-windows-msvc",
+          "filename": "onerom-studio_0.1.13_arm64-setup.exe",
+          "sha256": "381cbbdfe6f67c5602d17b81aa9b53353740a2692a602b1024a5b7fa0377b1ae"
+        },
+        {
+          "target": "aarch64-unknown-linux-gnu",
+          "filename": "onerom-studio_0.1.13-1_arm64.deb",
+          "sha256": "756145bbae63ea11509368ecc6728136d1f6ed9c1001e7325fcb5bb525c23a87"
+        },
+        {
+          "target": "universal-apple-darwin",
+          "filename": "One ROM Studio_0.1.13.dmg",
+          "sha256": "973d204d0086113706beb3f72672102f3356ebf03ed5bf9bb9d4aea4eef3aee9"
+        },
+        {
+          "target": "x86_64-pc-windows-msvc",
+          "filename": "onerom-studio_0.1.13_x64-setup.exe",
+          "sha256": "19591e0416be6522eb84a4b162ab2d606404d9b114020e0444be489b0e2c494d"
+        },
+        {
+          "target": "x86_64-unknown-linux-gnu",
+          "filename": "onerom-studio_0.1.13-1_amd64.deb",
+          "sha256": "e2a0f9dec5624d62afc2b3f0b73515fb8048ff9c84812e8f2b686232e099b64b"
+        }
+      ]
+    },
     {
       "version": "0.1.12",
       "path": "v0.1.12",

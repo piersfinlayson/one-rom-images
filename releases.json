@@ -37,6 +37,12 @@
                     ]
                 },
                 {
+                    "name": "fire-24-eadb01",
+                    "mcus": [
+                        {"name": "rp2350"}
+                    ]
+                },
+                {
                     "name": "fire-28-a",
                     "mcus": [
                         {"name": "rp2350"}

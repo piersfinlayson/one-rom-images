@@ -69,33 +69,8 @@
           "$ref": "#/$defs/PluginType"
         },
         "min_fw_version": {
-          "description": "Minimum One ROM firmware version required to run this plugin",
-          "$ref": "#/$defs/FirmwareVersion"
-        }
-      }
-    },
-    "FirmwareVersion": {
-      "description": "Minimum firmware version required",
-      "type": "object",
-      "required": ["major", "minor", "patch"],
-      "properties": {
-        "major": {
-          "type": "integer",
-          "format": "uint16",
-          "minimum": 0,
-          "maximum": 65535
-        },
-        "minor": {
-          "type": "integer",
-          "format": "uint16",
-          "minimum": 0,
-          "maximum": 65535
-        },
-        "patch": {
-          "type": "integer",
-          "format": "uint16",
-          "minimum": 0,
-          "maximum": 65535
+          "description": "Minimum One ROM firmware version required to run this plugin (e.g. 0.6.7)",
+          "type": "string"
         }
       }
     },

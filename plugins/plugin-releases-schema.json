@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PluginReleasesManifest",
+  "description": "One ROM per-plugin releases manifest",
+  "type": "object",
+  "required": ["version", "display_name", "description", "latest", "releases"],
+  "properties": {
+    "version": {
+      "description": "Manifest schema version - incremented on breaking changes",
+      "type": "integer",
+      "format": "uint32",
+      "minimum": 0,
+      "default": 1
+    },
+    "display_name": {
+      "description": "Human-readable plugin name",
+      "type": "string"
+    },
+    "description": {
+      "description": "Short description of the plugin",
+      "type": "string"
+    },
+    "latest": {
+      "description": "Latest released version string, e.g. 0.1.0",
+      "type": ["string", "null"]
+    },
+    "releases": {
+      "description": "List of releases, newest first",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/PluginRelease"
+      }
+    }
+  },
+  "$defs": {
+    "PluginRelease": {
+      "description": "A single plugin release entry",
+      "type": "object",
+      "required": [
+        "version", "path", "filename", "sha256",
+        "api_version", "plugin_type", "min_fw_version"
+      ],
+      "properties": {
+        "version": {
+          "description": "Plugin version string, e.g. 0.1.0",
+          "type": "string"
+        },
+        "path": {
+          "description": "Relative path to version directory, e.g. v0.1.0",
+          "type": "string"
+        },
+        "filename": {
+          "description": "Binary filename within the version directory",
+          "type": "string"
+        },
+        "sha256": {
+          "description": "SHA256 hex digest of the binary",
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "api_version": {
+          "description": "Plugin API version this release targets",
+          "type": "integer",
+          "format": "uint32",
+          "minimum": 1
+        },
+        "plugin_type": {
+          "description": "Plugin type",
+          "$ref": "#/$defs/PluginType"
+        },
+        "min_fw_version": {
+          "description": "Minimum One ROM firmware version required to run this plugin",
+          "$ref": "#/$defs/FirmwareVersion"
+        }
+      }
+    },
+    "FirmwareVersion": {
+      "description": "Minimum firmware version required",
+      "type": "object",
+      "required": ["major", "minor", "patch"],
+      "properties": {
+        "major": {
+          "type": "integer",
+          "format": "uint16",
+          "minimum": 0,
+          "maximum": 65535
+        },
+        "minor": {
+          "type": "integer",
+          "format": "uint16",
+          "minimum": 0,
+          "maximum": 65535
+        },
+        "patch": {
+          "type": "integer",
+          "format": "uint16",
+          "minimum": 0,
+          "maximum": 65535
+        }
+      }
+    },
+    "PluginType": {
+      "description": "Plugin type enum",
+      "type": "string",
+      "enum": ["system", "user", "pio"]
+    }
+  }
+}

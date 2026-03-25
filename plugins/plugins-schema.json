@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PluginsManifest",
+  "description": "One ROM top-level plugins manifest",
+  "type": "object",
+  "required": ["version", "plugins"],
+  "properties": {
+    "version": {
+      "description": "Manifest schema version - incremented on breaking changes",
+      "type": "integer",
+      "format": "uint32",
+      "minimum": 0,
+      "default": 1
+    },
+    "plugins": {
+      "description": "List of available plugins",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/PluginEntry"
+      }
+    }
+  },
+  "$defs": {
+    "PluginEntry": {
+      "description": "A single plugin entry in the top-level manifest",
+      "type": "object",
+      "required": ["name", "type", "path"],
+      "properties": {
+        "name": {
+          "description": "Plugin slug, matches directory name",
+          "type": "string"
+        },
+        "type": {
+          "description": "Plugin type",
+          "$ref": "#/$defs/PluginType"
+        },
+        "path": {
+          "description": "Relative path to plugin directory, e.g. system/usb",
+          "type": "string"
+        }
+      }
+    },
+    "PluginType": {
+      "description": "Plugin type enum",
+      "type": "string",
+      "enum": ["system", "user", "pio"]
+    }
+  }
+}

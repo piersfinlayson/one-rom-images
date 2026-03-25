@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "plugins": [
+    {
+      "name": "usb",
+      "type": "system",
+      "path": "system/usb"
+    }
+  ]
+}

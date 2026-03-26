@@ -2,8 +2,17 @@
   "version": 1,
   "display_name": "One ROM USB",
   "description": "Adds live USB support to One ROM",
-  "latest": "0.1.0",
+  "latest": "0.1.1",
   "releases": [
+    {
+      "version": "0.1.1",
+      "path": "v0.1.1",
+      "filename": "plugin.bin",
+      "sha256": "6a06e3d4ca1497e7a651bbc030fec56d7e062df5b303669eeda4518754ed3f2a",
+      "api_version": 1,
+      "plugin_type": "system",
+      "min_fw_version": "0.6.7"
+    },
     {
       "version": "0.1.0",
       "path": "v0.1.0",

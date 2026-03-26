@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "display_name": "One ROM Blink",
+  "description": "Blinks One ROM's status LED",
+  "latest": "0.1.0",
+  "releases": [
+    {
+      "version": "0.1.0",
+      "path": "v0.1.0",
+      "filename": "plugin.bin",
+      "sha256": "1f8035ea34ed1dfb75a1ea471b48f591824b8f10a89654364798989db4c7ffa1",
+      "api_version": 1,
+      "plugin_type": "user",
+      "min_fw_version": "0.6.7"
+    }
+  ]
+}

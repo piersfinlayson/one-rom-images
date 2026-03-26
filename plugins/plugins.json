@@ -5,6 +5,11 @@
       "name": "usb",
       "type": "system",
       "path": "system/usb"
+    },
+    {
+      "name": "blink",
+      "type": "user",
+      "path": "user/blink"
     }
   ]
 }

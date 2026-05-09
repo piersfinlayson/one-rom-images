@@ -1,0 +1,36 @@
+{
+  "collections": [
+    {
+      "id": "host-control",
+      "name": "Host Control ROMs",
+      "description": "Host-side ROM images which use One ROM's host-control plugin",
+      "versions": [
+        {
+          "version": "v0.1.0",
+          "roms": [
+            {
+              "name": "C64",
+              "description": "C64 Kernal Bootloader",
+              "machine": "c64",
+              "file": "c64_boot.bin"
+            },
+            {
+              "name": "VIC-20 NTSC",
+              "description": "VIC-20 NTSC Kernal Bootloader",
+              "machine": "vic20",
+              "variant": "ntsc",
+              "file": "vic20_ntsc_boot.bin"
+            },
+            {
+              "name": "VIC-20 PAL",
+              "description": "VIC-20 PAL Kernal Bootloader",
+              "machine": "vic20",
+              "variant": "pal",
+              "file": "vic20_pal_boot.bin"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

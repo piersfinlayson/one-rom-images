@@ -109,6 +109,19 @@
             </div>
         </details>
 
+        <details id="rom-images">
+            <summary>ROM Images</summary>
+            <p>
+                These are pre-built ROM images for different platforms, ready to load into One ROM.
+            </p>
+            <p>
+                ROM images are described by the <a href="/roms.json" target="_blank">ROM Images Manifest</a>.
+            </p>
+            <div id="rom-images-list">
+                <p>Loading...</p>
+            </div>
+        </details>
+
         <details id="other">
             <summary>Other Resources</summary>
 
@@ -335,6 +348,72 @@
                 .catch(error => {
                     console.error('Error fetching configs:', error);
                     document.getElementById('rom-configs-list').innerHTML = '<p>Error loading configurations</p>';
+                });
+                
+            fetch('/roms.json')
+                .then(response => response.json())
+                .then(data => {
+                    const romImagesList = document.getElementById('rom-images-list');
+                    romImagesList.innerHTML = '';
+
+                    if (data.collections && data.collections.length > 0) {
+                        data.collections.forEach(collection => {
+                            const collectionDetails = document.createElement('details');
+                            collectionDetails.open = true;
+                            collectionDetails.className = 'version-details';
+
+                            const collectionSummary = document.createElement('summary');
+                            collectionSummary.textContent = collection.name;
+                            collectionDetails.appendChild(collectionSummary);
+
+                            if (collection.description) {
+                                const desc = document.createElement('p');
+                                desc.textContent = collection.description;
+                                collectionDetails.appendChild(desc);
+                            }
+
+                            if (collection.versions && collection.versions.length > 0) {
+                                collection.versions.forEach(version => {
+                                    const versionDetails = document.createElement('details');
+                                    versionDetails.open = true;
+                                    versionDetails.className = 'board-details';
+
+                                    const versionSummary = document.createElement('summary');
+                                    versionSummary.textContent = `Version ${version.version}`;
+                                    versionDetails.appendChild(versionSummary);
+
+                                    if (version.roms && version.roms.length > 0) {
+                                        const romList = document.createElement('ul');
+                                        version.roms.forEach(rom => {
+                                            const item = document.createElement('li');
+                                            const link = document.createElement('a');
+                                            link.href = `/roms/${collection.id}/${version.version}/${rom.file}`;
+                                            link.textContent = rom.name;
+                                            if (rom.description) {
+                                                link.title = rom.description;
+                                            }
+                                            item.appendChild(link);
+                                            if (rom.description) {
+                                                item.appendChild(document.createTextNode(` — ${rom.description}`));
+                                            }
+                                            romList.appendChild(item);
+                                        });
+                                        versionDetails.appendChild(romList);
+                                    }
+
+                                    collectionDetails.appendChild(versionDetails);
+                                });
+                            }
+
+                            romImagesList.appendChild(collectionDetails);
+                        });
+                    } else {
+                        romImagesList.innerHTML = '<p>No ROM images available</p>';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching ROM images:', error);
+                    document.getElementById('rom-images-list').innerHTML = '<p>Error loading ROM images</p>';
                 });
         </script>
 

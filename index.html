@@ -49,6 +49,20 @@
 
         <hr>
 
+        <details id="plugin-images">
+            <summary>Plugin Images</summary>
+            <p>
+                Plugin images are described by the <a href="/plugins/plugins.json" target="_blank">Plugins Manifest</a>.
+            </p>
+            <div id="plugin-latest">
+                <p>Loading...</p>
+            </div>
+            <div id="plugin-versions">
+                <p>Loading...</p>
+            </div>
+            <hr>
+        </details>
+
         <details id="firmware-images">
             <summary>Firmware Images</summary>
             <p>
@@ -66,6 +80,7 @@
             <div id="versions-list">
                 <p>Loading...</p>
             </div>
+            <hr>
         </details>
 
         <details id="rom-configs">
@@ -89,6 +104,7 @@
             <div id="rom-configs-list">
                 <p>Loading...</p>
             </div>
+            <hr>
 
         </details>
 
@@ -107,6 +123,7 @@
                 <a href="https://onerom.org/web/" target="_blank">One ROM Web</a>
                 <span>Program One ROM USB from your browser</span>
             </div>
+            <hr>
         </details>
 
         <details id="rom-images">
@@ -120,6 +137,7 @@
             <div id="rom-images-list">
                 <p>Loading...</p>
             </div>
+            <hr>
         </details>
 
         <details id="other">
@@ -142,6 +160,7 @@
                 <a href="https://github.com/piersfinlayson/one-rom-images" target="_blank">One ROM Images GitHub</a>
                 <span>Source code for this site, served by GitHub Pages</span>
             </div>
+            <hr>
         </details>
 
         <details id="contact">
@@ -149,6 +168,7 @@
             <p>
                 If you have any questions about One ROM or this site, head over to the One ROM <a href="https://github.com/piersfinlayson/one-rom/discussions" target="_blank">Discussions</a> page on GitHub.
             </p>
+            <hr>
         </details>
 
         <details id="privacy">
@@ -223,6 +243,103 @@
             //
             // Handle firmware, configs, etc
             //
+
+            fetch('/plugins/plugins.json')
+                .then(r => r.json())
+                .then(data => {
+                    if (!data.plugins || data.plugins.length === 0) {
+                        document.getElementById('plugin-latest').innerHTML = '<p>No plugins available</p>';
+                        document.getElementById('plugin-versions').innerHTML = '';
+                        return;
+                    }
+
+                    const pluginPromises = data.plugins.map(plugin =>
+                        fetch(`/plugins/${plugin.path}/releases.json`)
+                            .then(r => r.json())
+                            .then(rel => ({ plugin, rel }))
+                    );
+
+                    Promise.all(pluginPromises).then(results => {
+                        // --- Latest section ---
+                        const latestDetails = document.createElement('details');
+                        latestDetails.open = true;
+                        latestDetails.className = 'version-details';
+
+                        const latestSummary = document.createElement('summary');
+                        latestSummary.textContent = 'Latest';
+                        latestDetails.appendChild(latestSummary);
+
+                        const latestList = document.createElement('ul');
+                        results.forEach(({ plugin, rel }) => {
+                            const latest = rel.releases.find(r => r.version === rel.latest) || rel.releases[0];
+                            const item = document.createElement('li');
+                            const link = document.createElement('a');
+                            link.href = `/plugins/${plugin.path}/${latest.path}/${latest.filename}`;
+                            link.textContent = `${rel.display_name} v${latest.version}`;
+                            link.title = rel.description || '';
+                            item.appendChild(link);
+                            if (rel.description) {
+                                item.appendChild(document.createTextNode(` — ${rel.description}`));
+                            }
+                            latestList.appendChild(item);
+                        });
+                        latestDetails.appendChild(latestList);
+                        document.getElementById('plugin-latest').innerHTML = '';
+                        document.getElementById('plugin-latest').appendChild(latestDetails);
+
+                        // --- Per-plugin collapsible sections ---
+                        const versionsDiv = document.getElementById('plugin-versions');
+                        versionsDiv.innerHTML = '';
+
+                        results.forEach(({ plugin, rel }) => {
+                            const pluginDetails = document.createElement('details');
+                            pluginDetails.className = 'version-details';
+
+                            const pluginSummary = document.createElement('summary');
+                            pluginSummary.textContent = rel.display_name;
+                            pluginDetails.appendChild(pluginSummary);
+
+                            if (rel.description) {
+                                const desc = document.createElement('p');
+                                desc.textContent = rel.description;
+                                pluginDetails.appendChild(desc);
+                            }
+
+                            rel.releases.forEach(release => {
+                                const relDetails = document.createElement('details');
+                                relDetails.className = 'board-details';
+
+                                const relSummary = document.createElement('summary');
+                                relSummary.textContent = `v${release.version}`;
+                                if (release.version === rel.latest) {
+                                    const badge = document.createElement('span');
+                                    badge.textContent = ' (latest)';
+                                    badge.className = 'o-in-rom';
+                                    relSummary.appendChild(badge);
+                                }
+                                relDetails.appendChild(relSummary);
+
+                                const ul = document.createElement('ul');
+                                const li = document.createElement('li');
+                                const a = document.createElement('a');
+                                a.href = `/plugins/${plugin.path}/${release.path}/${release.filename}`;
+                                a.textContent = release.filename;
+                                li.appendChild(a);
+                                ul.appendChild(li);
+                                relDetails.appendChild(ul);
+
+                                pluginDetails.appendChild(relDetails);
+                            });
+
+                            versionsDiv.appendChild(pluginDetails);
+                        });
+                    });
+                })
+                .catch(err => {
+                    console.error('Error fetching plugins:', err);
+                    document.getElementById('plugin-latest').innerHTML = '<p>Error loading plugins</p>';
+                    document.getElementById('plugin-versions').innerHTML = '';
+                });
 
             // Fetch and display firmware versions with boards and MCUs
             fetch('/releases.json')

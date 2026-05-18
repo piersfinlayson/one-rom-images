@@ -1,13 +1,44 @@
 {
   "version": 1,
   "latest": {
-    "x86_64-pc-windows-msvc": "0.1.6",
-    "x86_64-unknown-linux-gnu": "0.1.6",
-    "aarch64-unknown-linux-gnu": "0.1.6",
-    "universal-apple-darwin": "0.1.6",
-    "aarch64-pc-windows-msvc": "0.1.6"
+    "x86_64-pc-windows-msvc": "0.1.7",
+    "x86_64-unknown-linux-gnu": "0.1.7",
+    "aarch64-unknown-linux-gnu": "0.1.7",
+    "universal-apple-darwin": "0.1.7",
+    "aarch64-pc-windows-msvc": "0.1.7"
   },
   "releases": [
+    {
+      "version": "0.1.7",
+      "path": "v0.1.7",
+      "platforms": [
+        {
+          "target": "aarch64-pc-windows-msvc",
+          "filename": "onerom-cli-win-0.1.7-arm64.zip",
+          "sha256": "bb8087d4313b9ae0936e4f6686e24fd0ad65f43ef01a87f64f09730f8f9b8340"
+        },
+        {
+          "target": "aarch64-unknown-linux-gnu",
+          "filename": "onerom-cli_0.1.7-1_arm64.deb",
+          "sha256": "3995f05e9d028ebf9b8d70ed85082d5d72c19b279d36dde49e6caabd3a6de4cb"
+        },
+        {
+          "target": "universal-apple-darwin",
+          "filename": "onerom-cli-mac-0.1.7.zip",
+          "sha256": "d56c94ae671c3f392f7f107167ae6f3de3b074b19542b78a2359c6902083b9e4"
+        },
+        {
+          "target": "x86_64-pc-windows-msvc",
+          "filename": "onerom-cli-win-0.1.7-x86_64.zip",
+          "sha256": "f349935d5a49cfee199ec96ac61e0432dcb2798a5c107bb012e4d4a4c57999ee"
+        },
+        {
+          "target": "x86_64-unknown-linux-gnu",
+          "filename": "onerom-cli_0.1.7-1_amd64.deb",
+          "sha256": "6fdeb670bc049f6ca143dfc442db3f84fab56170564164c6dd24d9a44e1f96c1"
+        }
+      ]
+    },
     {
       "version": "0.1.6",
       "path": "v0.1.6",

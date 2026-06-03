@@ -15,6 +15,11 @@
       "name": "host-control",
       "type": "user",
       "path": "user/host-control"
+    },
+    {
+      "name": "rgb",
+      "type": "user",
+      "path": "user/rgb"
     }
   ]
 }

@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "display_name": "One ROM RGB",
+  "description": "Drives One ROM's RGB neo-pixel (supported models only)",
+  "latest": "0.1.0",
+  "releases": [
+    {
+      "version": "0.1.0",
+      "path": "v0.1.0",
+      "filename": "plugin.bin",
+      "sha256": "7468219d521b73d51d3629cb4d5b4f2f8959b349a459e1348c9ea9770e93fcd4",
+      "api_version": 1,
+      "plugin_type": "user",
+      "min_fw_version": "0.6.7"
+    }
+  ]
+}

@@ -11,7 +11,8 @@
       "sha256": "3b6cb5b16ee298799e605b7f8716f320fd07fbdf3d403c9931390cd08b9b1f55",
       "api_version": 1,
       "plugin_type": "system",
-      "min_fw_version": "0.6.9"
+      "min_fw_version": "0.6.9",
+      "incompatible_from": "0.7.0"
     },
     {
       "version": "0.1.1",
@@ -20,7 +21,8 @@
       "sha256": "6a06e3d4ca1497e7a651bbc030fec56d7e062df5b303669eeda4518754ed3f2a",
       "api_version": 1,
       "plugin_type": "system",
-      "min_fw_version": "0.6.7"
+      "min_fw_version": "0.6.7",
+      "incompatible_from": "0.7.0"
     },
     {
       "version": "0.1.0",
@@ -29,7 +31,8 @@
       "sha256": "2fddddb8e2b28eb026ef2f070e1e75a473b0384bbf64753eb3b371459a8d69d9",
       "api_version": 1,
       "plugin_type": "system",
-      "min_fw_version": "0.6.7"
+      "min_fw_version": "0.6.7",
+      "incompatible_from": "0.7.0"
     }
   ]
 }

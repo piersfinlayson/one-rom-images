@@ -71,6 +71,10 @@
         "min_fw_version": {
           "description": "Minimum One ROM firmware version required to run this plugin (e.g. 0.6.7)",
           "type": "string"
+        },
+        "incompatible_from": {
+          "description": "First One ROM firmware version this release is known to NOT work with, discovered after release. The compatibility window is half-open: [min_fw_version, incompatible_from). Absent means no known upper bound. Advisory: honoured by manifest-aware tooling (CLI) only, not enforced by firmware.",
+          "type": "string"
         }
       }
     },

@@ -11,7 +11,8 @@
       "sha256": "eb7f3c5393bd9f291243f1fbe49fd85e39df73d05403821d740c5491c186e2de",
       "api_version": 1,
       "plugin_type": "user",
-      "min_fw_version": "0.6.9"
+      "min_fw_version": "0.6.9",
+      "incompatible_from": "0.7.0"
     }
   ]
 }

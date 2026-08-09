@@ -3,6 +3,117 @@
     "latest": "0.6.14",
     "releases": [
         {
+            "version": "0.7.1",
+            "path": "v0.7.1",
+            "boards": [
+                {
+                    "name": "fire-24-a",
+                    "path": "fire",
+                    "mcus": [
+                        {"name": "rp2350"}
+                    ]
+                },
+                {
+                    "name": "fire-24-c",
+                    "path": "fire",
+                    "mcus": [
+                        {"name": "rp2350"}
+                    ]
+                },
+                {
+                    "name": "fire-24-d",
+                    "path": "fire",
+                    "mcus": [
+                        {"name": "rp2350"}
+                    ]
+                },
+                {
+                    "name": "fire-24-e",
+                    "path": "fire",
+                    "mcus": [
+                        {"name": "rp2350"}
+                    ]
+                },
+                {
+                    "name": "fire-24-eadb01",
+                    "path": "fire",
+                    "mcus": [
+                        {"name": "rp2350"}
+                    ]
+                },
+                {
+                    "name": "fire-24-f",
+                    "path": "fire",
+                    "mcus": [
+                        {"name": "rp2350"}
+                    ]
+                },
+                {
+                    "name": "fire-24-usb-b",
+                    "path": "fire",
+                    "mcus": [
+                        {"name": "rp2350"}
+                    ]
+                },
+                {
+                    "name": "fire-28-a",
+                    "path": "fire",
+                    "mcus": [
+                        {"name": "rp2350"}
+                    ]
+                },
+                {
+                    "name": "fire-28-b",
+                    "path": "fire",
+                    "mcus": [
+                        {"name": "rp2350"}
+                    ]
+                },
+                {
+                    "name": "fire-28-c",
+                    "path": "fire",
+                    "mcus": [
+                        {"name": "rp2350"}
+                    ]
+                },
+                {
+                    "name": "fire-28-d",
+                    "path": "fire",
+                    "mcus": [
+                        {"name": "rp2350"}
+                    ]
+                },
+                {
+                    "name": "fire-32-a",
+                    "path": "fire",
+                    "mcus": [
+                        {"name": "rp2350"}
+                    ]
+                },
+                {
+                    "name": "fire-32-b",
+                    "path": "fire",
+                    "mcus": [
+                        {"name": "rp2350"}
+                    ]
+                },
+                {
+                    "name": "fire-40-a",
+                    "path": "fire",
+                    "mcus": [
+                        {"name": "rp2350"}
+                    ]
+                },
+                {
+                    "name": "fire-40-b",
+                    "path": "fire",
+                    "mcus": [
+                        {"name": "rp2350"}
+                    ]
+                }
+            ]
+        },
+        {
             "version": "0.7.0",
             "path": "v0.7.0",
             "boards": [

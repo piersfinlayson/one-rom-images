@@ -2,8 +2,17 @@
   "version": 1,
   "display_name": "Host Control of One ROM",
   "description": "Allows hosts to control One ROM using the ROM Bus Control Protocol",
-  "latest": "0.1.1",
+  "latest": "0.1.2",
   "releases": [
+    {
+      "version": "0.1.2",
+      "path": "v0.1.2",
+      "filename": "plugin.bin",
+      "sha256": "09ca7f444b2acd4ecdeda0c0de5c0cc1e7fd8e3c6c6c58406255fdc978e41731",
+      "api_version": 1,
+      "plugin_type": "user",
+      "min_fw_version": "0.7.1"
+    },
     {
       "version": "0.1.1",
       "path": "v0.1.1",

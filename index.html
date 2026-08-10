@@ -75,7 +75,7 @@
                 If you would like a firmware containing ROM metadata and images (i.e. to serve ROMs), or assistance in programming your One ROM, use <a href="https://onerom.org/studio/" target="_blank">One ROM Studio</a> or <a href="https://onerom.org/web/" target="_blank">One ROM Web</a>.
             </p>
             <p>
-                There is a firmware image per version, per supported board, per supported MCU.  Expand the sections below to find the image you need.
+                Each firmware image covers one or more boards, for a specific version and MCU.  Since v0.7.0 a single image supports all One ROM Fire boards; before that there was an image per board.  Expand the sections below to find the image you need.
             </p>
             <div id="versions-list">
                 <p>Loading...</p>
@@ -213,6 +213,13 @@
                 font-size: 1.25rem;
                 font-weight: 500;
                 margin-bottom: 0rem;
+            }
+
+            #versions-list .boards-covered {
+                margin-left: 1.5rem;
+                margin-top: 0.25rem;
+                margin-bottom: 0.25rem;
+                font-size: 0.9rem;
             }
         </style>
 
@@ -369,34 +376,67 @@
                             // Create boards container
                             if (release.boards && release.boards.length > 0) {
                                 const boardsDiv = document.createElement('div');
-                                
+
+                                // Since v0.7.0 a single image covers many boards, so the
+                                // manifest gives each board an explicit path (which may be
+                                // shared).  Older manifests have no path - the image lives
+                                // under the board name.  Group boards sharing an image so
+                                // each image is listed once.
+                                const groups = [];
+                                const groupsByKey = new Map();
+
                                 release.boards.forEach(board => {
+                                    const mcus = board.mcus || [];
+                                    const boardPath = board.path || board.name;
+                                    const key = `${boardPath} ${mcus.map(mcu => mcu.name).join(',')}`;
+
+                                    let group = groupsByKey.get(key);
+                                    if (!group) {
+                                        group = { path: boardPath, mcus: mcus, boards: [] };
+                                        groupsByKey.set(key, group);
+                                        groups.push(group);
+                                    }
+                                    group.boards.push(board.name);
+                                });
+
+                                groups.forEach(group => {
                                     const boardDetails = document.createElement('details');
                                     boardDetails.className = 'board-details';
-                                    
+
                                     const boardSummary = document.createElement('summary');
-                                    boardSummary.textContent = board.name;
+                                    boardSummary.textContent = group.boards.length === 1
+                                        ? group.boards[0]
+                                        : `${group.path} (${group.boards.length} boards)`;
                                     boardDetails.appendChild(boardSummary);
-                                    
+
+                                    // List the boards this image covers, when it covers more
+                                    // than one
+                                    if (group.boards.length > 1) {
+                                        const boardsCovered = document.createElement('p');
+                                        boardsCovered.className = 'boards-covered';
+                                        boardsCovered.textContent = `Boards: ${group.boards.join(', ')}`;
+                                        boardDetails.appendChild(boardsCovered);
+                                    }
+
                                     // Create MCUs list
-                                    if (board.mcus && board.mcus.length > 0) {
+                                    if (group.mcus.length > 0) {
                                         const mcuList = document.createElement('ul');
-                                        
-                                        board.mcus.forEach(mcu => {
+
+                                        group.mcus.forEach(mcu => {
                                             const mcuItem = document.createElement('li');
                                             const mcuLink = document.createElement('a');
-                                            mcuLink.href = `/${release.path}/${board.name}/${mcu.name}/firmware.bin`;
+                                            mcuLink.href = `/${release.path}/${group.path}/${mcu.name}/firmware.bin`;
                                             mcuLink.textContent = mcu.name;
                                             mcuItem.appendChild(mcuLink);
                                             mcuList.appendChild(mcuItem);
                                         });
-                                        
+
                                         boardDetails.appendChild(mcuList);
                                     }
-                                    
+
                                     boardsDiv.appendChild(boardDetails);
                                 });
-                                
+
                                 versionDetails.appendChild(boardsDiv);
                             }
                             

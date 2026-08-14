@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "documents": [
+    {
+      "slug": "cli-manual",
+      "title": "One ROM CLI Manual",
+      "path": "cli-manual"
+    }
+  ]
+}

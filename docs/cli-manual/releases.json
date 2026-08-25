@@ -4,7 +4,9 @@
   "description": "onerom (onerom.exe on Windows) is the command-line tool for managing One ROM ROM emulators: discovering connected devices, building and flashing firmware, inspecting device state, and manipulating ROM image files.",
   "tracks": "cli",
   "tracks_label": "CLI",
-  "source_path": "docs/CLI-MANUAL.md",
+  "sources": [
+    "docs/CLI-MANUAL.md"
+  ],
   "latest": "0.3.0",
   "releases": [
     {

@@ -7,6 +7,25 @@
     <link rel="stylesheet" href="https://onerom.org/style.css">
     <link rel="shortcut icon" href="https://onerom.org/images/favicon.png" type="image/x-icon" />
 
+    <style>
+        /* The shared stylesheet sizes every summary at 1.5rem, which puts an
+           entry at the same weight as the section holding it. */
+        #rom-images-list details > summary,
+        #retro-apps-list details > summary {
+            font-size: 1.15rem;
+            font-weight: 500;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        .collection-name {
+            font-size: 1.25rem;
+            font-weight: 500;
+            letter-spacing: -0.025em;
+            margin-top: 1.5rem;
+            margin-bottom: 0.25rem;
+        }
+    </style>
+
     <!-- SEO title & description -->
     <title>One ROM Images - The Most Flexible Retro ROM Replacement</title>
     <meta name="description" content="Firmware images and configurations for One ROM  - The Most Flexible Retro ROM Replacement">
@@ -529,13 +548,12 @@
 
                     if (data.collections && data.collections.length > 0) {
                         data.collections.forEach(collection => {
-                            const collectionDetails = document.createElement('details');
-                            collectionDetails.open = true;
-                            collectionDetails.className = 'version-details';
+                            const collectionDetails = document.createElement('div');
 
-                            const collectionSummary = document.createElement('summary');
-                            collectionSummary.textContent = collection.name;
-                            collectionDetails.appendChild(collectionSummary);
+                            const collectionName = document.createElement('h3');
+                            collectionName.className = 'collection-name';
+                            collectionName.textContent = collection.name;
+                            collectionDetails.appendChild(collectionName);
 
                             if (collection.description) {
                                 const desc = document.createElement('p');
@@ -545,7 +563,6 @@
 
                             (collection.roms || []).forEach(rom => {
                                 const romDetails = document.createElement('details');
-                                romDetails.open = true;
                                 romDetails.className = 'board-details';
 
                                 const romSummary = document.createElement('summary');
@@ -625,7 +642,6 @@
                     if (data.apps && data.apps.length > 0) {
                         data.apps.forEach(app => {
                             const appDetails = document.createElement('details');
-                            appDetails.open = true;
                             appDetails.className = 'version-details';
 
                             const appSummary = document.createElement('summary');

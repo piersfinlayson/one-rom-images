@@ -6,6 +6,39 @@
             "description": "Host-side ROM images which use One ROM's host-control plugin",
             "roms": [
                 {
+                    "id": "c64-bootloader",
+                    "name": "C64 Bootloader",
+                    "description": "A C64 kernal bootloader compatible with cartridges. The c64c image is a combined 16KB kernal and basic ROM.",
+                    "machine": "c64",
+                    "source": "https://github.com/piersfinlayson/c64-bootloader",
+                    "latest": "v0.1.1",
+                    "versions": [
+                        {
+                            "version": "v0.1.1",
+                            "files": [
+                                {
+                                    "file": "c64_bootloader.bin",
+                                    "sha256": "02735251d06d03a8c08d61bc11e104835f15b4bdd51babe883d12fd6b87d6158"
+                                },
+                                {
+                                    "file": "c64_bootloader_c64c.bin",
+                                    "variant": "c64c",
+                                    "sha256": "96198fd754866347ce76273338d73dde97f6710745c163bc4301bc8975c3349e"
+                                }
+                            ]
+                        },
+                        {
+                            "version": "v0.1.0",
+                            "files": [
+                                {
+                                    "file": "c64_bootloader.bin",
+                                    "sha256": "02735251d06d03a8c08d61bc11e104835f15b4bdd51babe883d12fd6b87d6158"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
                     "id": "c64-boot",
                     "name": "C64 RBCP Reference Bootloader",
                     "description": "A C64 kernal bootloader reference implementation",
@@ -69,39 +102,6 @@
                                     "file": "apple2_boot_ef.bin",
                                     "variant": "ef",
                                     "sha256": "d4df86ee3710547e39098d641776e000f8ab49b3b258263a1a1efb53c2840e2e"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "c64-bootloader",
-                    "name": "C64 Bootloader",
-                    "description": "A C64 kernal bootloader compatible with cartridges. The c64c image is a combined 16KB kernal and basic ROM.",
-                    "machine": "c64",
-                    "source": "https://github.com/piersfinlayson/c64-bootloader",
-                    "latest": "v0.1.1",
-                    "versions": [
-                        {
-                            "version": "v0.1.0",
-                            "files": [
-                                {
-                                    "file": "c64_bootloader.bin",
-                                    "sha256": "02735251d06d03a8c08d61bc11e104835f15b4bdd51babe883d12fd6b87d6158"
-                                }
-                            ]
-                        },
-                        {
-                            "version": "v0.1.1",
-                            "files": [
-                                {
-                                    "file": "c64_bootloader.bin",
-                                    "sha256": "02735251d06d03a8c08d61bc11e104835f15b4bdd51babe883d12fd6b87d6158"
-                                },
-                                {
-                                    "file": "c64_bootloader_c64c.bin",
-                                    "variant": "c64c",
-                                    "sha256": "96198fd754866347ce76273338d73dde97f6710745c163bc4301bc8975c3349e"
                                 }
                             ]
                         }

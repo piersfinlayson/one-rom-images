@@ -140,6 +140,20 @@
             <hr>
         </details>
 
+        <details id="retro-apps">
+            <summary>Retro Machine Applications</summary>
+            <p>
+                Programs you run on the retro machine itself, which talk to the One ROM in its socket.  Unlike ROM images the device does not serve these &mdash; they go on the machine's own disk.
+            </p>
+            <p>
+                Retro machine applications are described by the <a href="/retro-apps.json" target="_blank">Retro Machine Applications Manifest</a>.
+            </p>
+            <div id="retro-apps-list">
+                <p>Loading...</p>
+            </div>
+            <hr>
+        </details>
+
         <details id="other">
             <summary>Other Resources</summary>
 
@@ -529,38 +543,67 @@
                                 collectionDetails.appendChild(desc);
                             }
 
-                            if (collection.versions && collection.versions.length > 0) {
-                                collection.versions.forEach(version => {
-                                    const versionDetails = document.createElement('details');
-                                    versionDetails.open = true;
-                                    versionDetails.className = 'board-details';
+                            (collection.roms || []).forEach(rom => {
+                                const romDetails = document.createElement('details');
+                                romDetails.open = true;
+                                romDetails.className = 'board-details';
 
-                                    const versionSummary = document.createElement('summary');
-                                    versionSummary.textContent = `Version ${version.version}`;
-                                    versionDetails.appendChild(versionSummary);
+                                const romSummary = document.createElement('summary');
+                                romSummary.textContent = rom.name;
+                                romDetails.appendChild(romSummary);
 
-                                    if (version.roms && version.roms.length > 0) {
-                                        const romList = document.createElement('ul');
-                                        version.roms.forEach(rom => {
-                                            const item = document.createElement('li');
+                                if (rom.description) {
+                                    const desc = document.createElement('p');
+                                    desc.textContent = rom.description;
+                                    romDetails.appendChild(desc);
+                                }
+
+                                if (rom.source) {
+                                    const src = document.createElement('p');
+                                    const srcLink = document.createElement('a');
+                                    srcLink.href = rom.source;
+                                    srcLink.target = '_blank';
+                                    srcLink.textContent = 'Source and documentation';
+                                    src.appendChild(srcLink);
+                                    romDetails.appendChild(src);
+                                }
+
+                                if (rom.latest) {
+                                    const latest = document.createElement('p');
+                                    latest.appendChild(document.createTextNode('Latest is ' + rom.latest + ': '));
+                                    const at = (rom.versions || []).find(v => v.version === rom.latest);
+                                    (at ? at.files : []).forEach((f, n) => {
+                                        if (n) latest.appendChild(document.createTextNode(', '));
+                                        const link = document.createElement('a');
+                                        link.href = `/roms/${collection.id}/${rom.id}/latest/${f.file}`;
+                                        link.textContent = f.file;
+                                        latest.appendChild(link);
+                                    });
+                                    romDetails.appendChild(latest);
+                                }
+
+                                if (rom.versions && rom.versions.length > 0) {
+                                    const versionList = document.createElement('ul');
+                                    rom.versions.forEach(version => {
+                                        const item = document.createElement('li');
+                                        item.appendChild(document.createTextNode(version.version + ' \u2014 '));
+                                        (version.files || []).forEach((f, n) => {
+                                            if (n) item.appendChild(document.createTextNode(', '));
                                             const link = document.createElement('a');
-                                            link.href = `/roms/${collection.id}/${version.version}/${rom.file}`;
-                                            link.textContent = rom.name;
-                                            if (rom.description) {
-                                                link.title = rom.description;
+                                            link.href = `/roms/${collection.id}/${rom.id}/${version.version}/${f.file}`;
+                                            link.textContent = f.file;
+                                            if (f.sha256) {
+                                                link.title = `sha256 ${f.sha256}`;
                                             }
                                             item.appendChild(link);
-                                            if (rom.description) {
-                                                item.appendChild(document.createTextNode(` — ${rom.description}`));
-                                            }
-                                            romList.appendChild(item);
                                         });
-                                        versionDetails.appendChild(romList);
-                                    }
+                                        versionList.appendChild(item);
+                                    });
+                                    romDetails.appendChild(versionList);
+                                }
 
-                                    collectionDetails.appendChild(versionDetails);
-                                });
-                            }
+                                collectionDetails.appendChild(romDetails);
+                            });
 
                             romImagesList.appendChild(collectionDetails);
                         });
@@ -571,6 +614,83 @@
                 .catch(error => {
                     console.error('Error fetching ROM images:', error);
                     document.getElementById('rom-images-list').innerHTML = '<p>Error loading ROM images</p>';
+                });
+
+            fetch('/retro-apps.json')
+                .then(response => response.json())
+                .then(data => {
+                    const appsList = document.getElementById('retro-apps-list');
+                    appsList.innerHTML = '';
+
+                    if (data.apps && data.apps.length > 0) {
+                        data.apps.forEach(app => {
+                            const appDetails = document.createElement('details');
+                            appDetails.open = true;
+                            appDetails.className = 'version-details';
+
+                            const appSummary = document.createElement('summary');
+                            appSummary.textContent = app.name;
+                            appDetails.appendChild(appSummary);
+
+                            if (app.description) {
+                                const desc = document.createElement('p');
+                                desc.textContent = app.description;
+                                appDetails.appendChild(desc);
+                            }
+
+                            if (app.source) {
+                                const src = document.createElement('p');
+                                const srcLink = document.createElement('a');
+                                srcLink.href = app.source;
+                                srcLink.target = '_blank';
+                                srcLink.textContent = 'Source and documentation';
+                                src.appendChild(srcLink);
+                                appDetails.appendChild(src);
+                            }
+
+                            if (app.latest) {
+                                const latest = document.createElement('p');
+                                latest.appendChild(document.createTextNode('Latest is ' + app.latest + ': '));
+                                const files = (app.versions || []).find(v => v.version === app.latest);
+                                (files ? files.files : []).forEach((f, n) => {
+                                    if (n) latest.appendChild(document.createTextNode(', '));
+                                    const link = document.createElement('a');
+                                    link.href = `/retro-apps/${app.id}/latest/${f.file}`;
+                                    link.textContent = f.file;
+                                    latest.appendChild(link);
+                                });
+                                appDetails.appendChild(latest);
+                            }
+
+                            if (app.versions && app.versions.length > 0) {
+                                const versionList = document.createElement('ul');
+                                app.versions.forEach(version => {
+                                    const item = document.createElement('li');
+                                    item.appendChild(document.createTextNode(version.version + ' — '));
+                                    (version.files || []).forEach((f, n) => {
+                                        if (n) item.appendChild(document.createTextNode(', '));
+                                        const link = document.createElement('a');
+                                        link.href = `/retro-apps/${app.id}/${version.version}/${f.file}`;
+                                        link.textContent = f.file;
+                                        if (f.sha256) {
+                                            link.title = `sha256 ${f.sha256}`;
+                                        }
+                                        item.appendChild(link);
+                                    });
+                                    versionList.appendChild(item);
+                                });
+                                appDetails.appendChild(versionList);
+                            }
+
+                            appsList.appendChild(appDetails);
+                        });
+                    } else {
+                        appsList.innerHTML = '<p>No retro machine applications available</p>';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching retro machine applications:', error);
+                    document.getElementById('retro-apps-list').innerHTML = '<p>Error loading retro machine applications</p>';
                 });
         </script>
 

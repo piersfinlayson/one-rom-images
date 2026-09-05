@@ -4,35 +4,106 @@
             "id": "host-control",
             "name": "Host Control ROMs",
             "description": "Host-side ROM images which use One ROM's host-control plugin",
-            "versions": [
+            "roms": [
                 {
-                    "version": "v0.1.0",
-                    "roms": [
+                    "id": "c64-boot",
+                    "name": "C64 RBCP Reference Bootloader",
+                    "description": "A C64 kernal bootloader reference implementation",
+                    "machine": "c64",
+                    "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/6502/c64-boot",
+                    "latest": "v0.1.1",
+                    "versions": [
                         {
-                            "name": "C64 Bootloader",
-                            "description": "A C64 kernal bootloader compatible with cartridges",
-                            "machine": "c64",
-                            "file": "c64_bootloader.bin"
+                            "version": "v0.1.1",
+                            "files": [
+                                {
+                                    "file": "c64_boot.bin",
+                                    "sha256": "b5ceb09bb69027a540eef6b1fb89f788c56a4e0fa19c3054b534bc91d9435588"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "vic20-boot",
+                    "name": "VIC-20 RBCP Reference Bootloader",
+                    "description": "A VIC-20 kernal bootloader reference implementation",
+                    "machine": "vic20",
+                    "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/6502/vic20-boot",
+                    "latest": "v0.1.1",
+                    "versions": [
+                        {
+                            "version": "v0.1.1",
+                            "files": [
+                                {
+                                    "file": "vic20_boot_pal.bin",
+                                    "variant": "pal",
+                                    "sha256": "dab37680c15d6c32d205306088f089da2f3753ddd05259c716ab698db862f6ad"
+                                },
+                                {
+                                    "file": "vic20_boot_ntsc.bin",
+                                    "variant": "ntsc",
+                                    "sha256": "be04e98c91959a754bf5b450453b202d1c41f2b47c6e923ffe39fc8614056359"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "apple2-boot",
+                    "name": "Apple II RBCP Reference Bootloader",
+                    "description": "An Apple II ROM bootloader reference implementation, a 2KB F8 image for a II or II+ and an 8KB EF image for a IIe",
+                    "machine": "apple2",
+                    "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/6502/apple2-boot",
+                    "latest": "v0.1.0",
+                    "versions": [
+                        {
+                            "version": "v0.1.0",
+                            "files": [
+                                {
+                                    "file": "apple2_boot_f8.bin",
+                                    "variant": "f8",
+                                    "sha256": "a083f1b8975e736987636697d96973fe523d7a90012c728256bd4d0fe297a11a"
+                                },
+                                {
+                                    "file": "apple2_boot_ef.bin",
+                                    "variant": "ef",
+                                    "sha256": "d4df86ee3710547e39098d641776e000f8ab49b3b258263a1a1efb53c2840e2e"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "c64-bootloader",
+                    "name": "C64 Bootloader",
+                    "description": "A C64 kernal bootloader compatible with cartridges. The c64c image is a combined 16KB kernal and basic ROM.",
+                    "machine": "c64",
+                    "source": "https://github.com/piersfinlayson/c64-bootloader",
+                    "latest": "v0.1.1",
+                    "versions": [
+                        {
+                            "version": "v0.1.0",
+                            "files": [
+                                {
+                                    "file": "c64_bootloader.bin",
+                                    "sha256": "02735251d06d03a8c08d61bc11e104835f15b4bdd51babe883d12fd6b87d6158"
+                                }
+                            ]
                         },
                         {
-                            "name": "C64 RBCP Reference Bootloader",
-                            "description": "A C64 kernal bootloader reference implementation",
-                            "machine": "c64",
-                            "file": "c64_boot.bin"
-                        },
-                        {
-                            "name": "VIC-20 NTSC RBCP Reference Bootloader",
-                            "description": "A VIC-20 NTSC kernal bootloader reference implementation",
-                            "machine": "vic20",
-                            "variant": "ntsc",
-                            "file": "vic20_ntsc_boot.bin"
-                        },
-                        {
-                            "name": "VIC-20 PAL RBCP Reference Bootloader",
-                            "description": "A VIC-20 PAL kernal bootloader reference implementation",
-                            "machine": "vic20",
-                            "variant": "pal",
-                            "file": "vic20_pal_boot.bin"
+                            "version": "v0.1.1",
+                            "files": [
+                                {
+                                    "file": "c64_bootloader.bin",
+                                    "sha256": "02735251d06d03a8c08d61bc11e104835f15b4bdd51babe883d12fd6b87d6158"
+                                },
+                                {
+                                    "file": "c64_bootloader_c64c.bin",
+                                    "variant": "c64c",
+                                    "sha256": "96198fd754866347ce76273338d73dde97f6710745c163bc4301bc8975c3349e"
+                                }
+                            ]
                         }
                     ]
                 }

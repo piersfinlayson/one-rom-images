@@ -1,0 +1,25 @@
+{
+    "version": 1,
+    "apps": [
+        {
+            "id": "romsel",
+            "name": "ROMSEL",
+            "description": "Picks which image a One ROM serves from the BIOS socket of an 8088 machine, and resets into it. Runs from DOS.",
+            "machine": "ibm-pc",
+            "os": "dos",
+            "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/x86/romsel",
+            "latest": "v0.1.0",
+            "versions": [
+                {
+                    "version": "v0.1.0",
+                    "files": [
+                        {
+                            "file": "romsel.exe",
+                            "sha256": "b9faecae06229d4e8394a284beb6628386c8b9f7c195a1734da8828bf975344f"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

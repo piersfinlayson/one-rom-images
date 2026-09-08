@@ -5,6 +5,16 @@
       "slug": "cli-manual",
       "title": "One ROM CLI Manual",
       "path": "cli-manual"
+    },
+    {
+      "slug": "compatibility",
+      "title": "One ROM Chip Compatibility",
+      "path": "compatibility"
+    },
+    {
+      "slug": "chip-types",
+      "title": "Chip Type Specifications",
+      "path": "chip-types"
     }
   ]
 }

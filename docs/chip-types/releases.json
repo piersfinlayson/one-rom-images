@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "display_name": "Chip Type Specifications",
+  "description": "This document provides detailed specifications for the different Chip types One ROM supports, and aims to support in future, including pinouts, control lines, and programming requirements.",
+  "tracks": "firmware",
+  "tracks_label": "Firmware",
+  "sources": [
+    "docs/CHIP-TYPES.md"
+  ],
+  "latest": null,
+  "releases": [
+    {
+      "version": "0.7.2",
+      "path": "v0.7.2",
+      "files": [
+        {
+          "paper": "a4",
+          "filename": "onerom-chip-types-0.7.2-a4.pdf",
+          "sha256": "7dca8714154bc2c9a43c76e9d5850056bac3f75b517543e5479320315c693f07"
+        },
+        {
+          "paper": "letter",
+          "filename": "onerom-chip-types-0.7.2-letter.pdf",
+          "sha256": "80fb3105aefbbec9fb9a4f2018a5c2d3273bcfdd40b5e359f96fd8595dfde2e9"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "display_name": "One ROM Chip Compatibility",
+  "description": "This document shows which chips each One ROM Fire hardware variant emulates.",
+  "tracks": "firmware",
+  "tracks_label": "Firmware",
+  "sources": [
+    "docs/COMPATIBILITY.md"
+  ],
+  "latest": null,
+  "releases": [
+    {
+      "version": "0.7.2",
+      "path": "v0.7.2",
+      "files": [
+        {
+          "paper": "a4",
+          "filename": "onerom-compatibility-0.7.2-a4.pdf",
+          "sha256": "3f51ec8dfe3e66ae7e18fbabbd6c4aa634ea9e6268c8c192c89dbcfb50defe1b"
+        },
+        {
+          "paper": "letter",
+          "filename": "onerom-compatibility-0.7.2-letter.pdf",
+          "sha256": "1496b3e48097020a71bb968a41c42f6461ea5c2ecb4857e313a80ff7aa95a7b3"
+        }
+      ]
+    }
+  ]
+}

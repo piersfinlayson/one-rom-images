@@ -11,7 +11,8 @@
       "sha256": "3a459b01452b0d47bbf5bcea41d85117bdadab07030bec444b47785af74437fd",
       "api_version": 1,
       "plugin_type": "system",
-      "min_fw_version": "0.7.0"
+      "min_fw_version": "0.7.0",
+      "incompatible_from": "0.7.2"
     },
     {
       "version": "0.2.0",
@@ -20,7 +21,8 @@
       "sha256": "0f2015967719e26d537987b132474bf16d230895f9ab746a5eb307de3e3e67de",
       "api_version": 1,
       "plugin_type": "system",
-      "min_fw_version": "0.7.0"
+      "min_fw_version": "0.7.0",
+      "incompatible_from": "0.7.2"
     },
     {
       "version": "0.1.2",

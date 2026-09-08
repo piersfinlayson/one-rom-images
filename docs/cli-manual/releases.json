@@ -7,7 +7,7 @@
   "sources": [
     "docs/CLI-MANUAL.md"
   ],
-  "latest": "0.3.0",
+  "latest": "0.4.0",
   "releases": [
     {
       "version": "0.3.0",

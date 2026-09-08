@@ -7,7 +7,7 @@
   "sources": [
     "docs/CHIP-TYPES.md"
   ],
-  "latest": null,
+  "latest": "0.7.2",
   "releases": [
     {
       "version": "0.7.2",

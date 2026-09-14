@@ -2,6 +2,9 @@
   "version": 1,
   "display_name": "One ROM Blink",
   "description": "Blinks One ROM's status LED",
+  "author": "Piers Finlayson",
+  "source": "https://github.com/piersfinlayson/one-rom",
+  "license": "MIT",
   "latest": "0.1.0",
   "releases": [
     {

@@ -3,7 +3,7 @@
   "title": "PluginReleasesManifest",
   "description": "One ROM per-plugin releases manifest",
   "type": "object",
-  "required": ["version", "display_name", "description", "latest", "releases"],
+  "required": ["version", "display_name", "description", "author", "source", "license", "latest", "releases"],
   "properties": {
     "version": {
       "description": "Manifest schema version - incremented on breaking changes",
@@ -18,6 +18,18 @@
     },
     "description": {
       "description": "Short description of the plugin",
+      "type": "string"
+    },
+    "author": {
+      "description": "The plugin author's name or handle",
+      "type": "string"
+    },
+    "source": {
+      "description": "The repository the plugin is built from",
+      "type": "string"
+    },
+    "license": {
+      "description": "SPDX identifier of the plugin's license, e.g. MIT",
       "type": "string"
     },
     "latest": {

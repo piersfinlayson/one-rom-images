@@ -29,6 +29,7 @@
         "configs/pincoder-2021-sys7-all.json",
         "configs/pincoder-2021-sys6a.json",
         "configs/pincoder-2021-sys346.json",
-        "configs/dragon32.json"
+        "configs/dragon32.json",
+        "configs/colecovision.json"
     ]
 }

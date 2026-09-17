@@ -24,6 +24,22 @@
           "sha256": "80fb3105aefbbec9fb9a4f2018a5c2d3273bcfdd40b5e359f96fd8595dfde2e9"
         }
       ]
+    },
+    {
+      "version": "0.7.3",
+      "path": "v0.7.3",
+      "files": [
+        {
+          "paper": "a4",
+          "filename": "onerom-chip-types-0.7.3-a4.pdf",
+          "sha256": "ff6ed8425315c7abb1f2e4d1bbf427558bc2c662384f716af68031f6ab4389a0"
+        },
+        {
+          "paper": "letter",
+          "filename": "onerom-chip-types-0.7.3-letter.pdf",
+          "sha256": "cabba77df72ff877c69f6e64d075a86e67f537e4cf085b8dd8221cac214efe34"
+        }
+      ]
     }
   ]
 }

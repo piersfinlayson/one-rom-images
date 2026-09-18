@@ -2,6 +2,30 @@
     "version": 1,
     "apps": [
         {
+            "id": "c64-led-test",
+            "name": "RBCP LED Tester",
+            "description": "Drives a device's LEDs from a Commodore 64. Loads from disk.",
+            "machine": "c64",
+            "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/6502/c64-led-test",
+            "latest": "v0.1.0",
+            "versions": [
+                {
+                    "version": "v0.1.0",
+                    "files": [
+                        {
+                            "file": "rbcp_led_test.prg",
+                            "sha256": "f9dc8b53171a5d6a162993b48bdd36a0d5b75b212d722313a406a9a7aaaf97fd"
+                        },
+                        {
+                            "file": "rbcp-led-test.d64",
+                            "variant": "d64",
+                            "sha256": "7eecf6b8d3eb5ba5ed3a3afc9a39600304f22fa2f473668e40a70f2fc1075b39"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "id": "romsel",
             "name": "ROMSEL",
             "description": "Picks which image a One ROM serves from the BIOS socket of an 8088 machine, and resets into it. Runs from DOS.",

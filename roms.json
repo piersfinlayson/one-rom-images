@@ -88,8 +88,23 @@
                     "description": "An Apple II ROM bootloader reference implementation, a 2KB F8 image for a II or II+ and an 8KB EF image for a IIe",
                     "machine": "apple2",
                     "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/6502/apple2-boot",
-                    "latest": "v0.1.0",
+                    "latest": "v0.1.1",
                     "versions": [
+                        {
+                            "version": "v0.1.1",
+                            "files": [
+                                {
+                                    "file": "apple2_boot_f8.bin",
+                                    "variant": "f8",
+                                    "sha256": "c51b3a94e6d2f9a00529cb014e26f79a1d699284e9dc81e2246d5f827a99ff8c"
+                                },
+                                {
+                                    "file": "apple2_boot_ef.bin",
+                                    "variant": "ef",
+                                    "sha256": "27f98ed676d00cea36890cdf8af8b094a4a573f507a8f26e8ae25db55bbb0d3d"
+                                }
+                            ]
+                        },
                         {
                             "version": "v0.1.0",
                             "files": [
@@ -102,6 +117,31 @@
                                     "file": "apple2_boot_ef.bin",
                                     "variant": "ef",
                                     "sha256": "d4df86ee3710547e39098d641776e000f8ab49b3b258263a1a1efb53c2840e2e"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "amiga-boot",
+                    "name": "Amiga RBCP Reference Bootloader",
+                    "description": "An Amiga Kickstart bootloader reference implementation. 256KB and 512KB images.",
+                    "machine": "amiga",
+                    "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/68k/amiga-boot",
+                    "latest": "v0.1.0",
+                    "versions": [
+                        {
+                            "version": "v0.1.0",
+                            "files": [
+                                {
+                                    "file": "amiga_boot_256k.bin",
+                                    "variant": "256k",
+                                    "sha256": "a12eb5a223ea0ca02b55eaea917b89359174c68ca0f1b6c9067c719dcd6b3ad1"
+                                },
+                                {
+                                    "file": "amiga_boot_512k.bin",
+                                    "variant": "512k",
+                                    "sha256": "e4a9f656f9a92237e6182c7036c65719ed18efe04d78a20a158e1aec19dd90dc"
                                 }
                             ]
                         }

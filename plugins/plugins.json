@@ -20,6 +20,11 @@
       "name": "rgb",
       "type": "user",
       "path": "user/rgb"
+    },
+    {
+      "name": "drivewire",
+      "type": "user",
+      "path": "user/drivewire"
     }
   ]
 }

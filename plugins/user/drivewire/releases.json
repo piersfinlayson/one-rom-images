@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "display_name": "DriveWire Bridge",
+  "description": "Bridges a CoCo/Dragon DriveWire session to a real DriveWire server over One ROM's RP2350 UART1",
+  "author": "William Athing",
+  "source": "https://github.com/wdathing/one-rom",
+  "license": "MIT",
+  "latest": "1.0.0",
+  "releases": [
+    {
+      "version": "1.0.0",
+      "path": "v1.0.0",
+      "filename": "plugin.bin",
+      "sha256": "c8671532f676d7d7a25f238d76bb6bd2e02b95e93bcba0993a05f0c1415e5191",
+      "api_version": 1,
+      "plugin_type": "user",
+      "min_fw_version": "0.7.3"
+    }
+  ]
+}

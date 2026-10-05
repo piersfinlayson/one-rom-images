@@ -19,8 +19,8 @@
         },
         {
           "target": "aarch64-unknown-linux-gnu",
-          "filename": "onerom-studio_0.2.3-1_arm64.deb",
-          "sha256": "81aa63622677bf0b44ae12b2042cc761e4c542c8b434120f852da40d455976ad"
+          "filename": "onerom-studio_0.2.3-2_arm64.deb",
+          "sha256": "80064be7dc89b84f13e15f669906d6bc519fc8291c1bb5b2cb5800e8809cb8ec"
         },
         {
           "target": "universal-apple-darwin",
@@ -34,8 +34,8 @@
         },
         {
           "target": "x86_64-unknown-linux-gnu",
-          "filename": "onerom-studio_0.2.3-1_amd64.deb",
-          "sha256": "874fb04c5ded43d25250cfb715b77a6ebe9c0d855b3d564441fc637499264aa0"
+          "filename": "onerom-studio_0.2.3-2_amd64.deb",
+          "sha256": "1fd5bee4938b6259ce04052337b3961f9a67ad181e5754f7e72314e2f09dde47"
         }
       ]
     },

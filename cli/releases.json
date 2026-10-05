@@ -19,8 +19,8 @@
         },
         {
           "target": "aarch64-unknown-linux-gnu",
-          "filename": "onerom-cli_0.4.1-1_arm64.deb",
-          "sha256": "e869ac56251d5f3e55c9510462490310a0d135adea2636dc93cdce76727f7663"
+          "filename": "onerom-cli_0.4.1-2_arm64.deb",
+          "sha256": "cf4a83f4d0695f04355a67ecb08ef28921a8ac9e50b77e9c903766c502d9f865"
         },
         {
           "target": "universal-apple-darwin",
@@ -34,8 +34,8 @@
         },
         {
           "target": "x86_64-unknown-linux-gnu",
-          "filename": "onerom-cli_0.4.1-1_amd64.deb",
-          "sha256": "13207d0a56ac6841f46a4fd1666bff4bea40742f27a0eb14a2e4d7af9c999fb3"
+          "filename": "onerom-cli_0.4.1-2_amd64.deb",
+          "sha256": "9d949e056ac14af314b262fa513e167bb1f8aff7b643dd415f5053f7d9c7d8cf"
         }
       ]
     },

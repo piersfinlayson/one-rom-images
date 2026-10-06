@@ -56,6 +56,22 @@
           "sha256": "c0abb32c941339e021bf1303c2f780dfa9a7d61dc2228f3a9d2883ea8d0a1e86"
         }
       ]
+    },
+    {
+      "version": "0.5.0",
+      "path": "v0.5.0",
+      "files": [
+        {
+          "paper": "a4",
+          "filename": "onerom-cli-manual-0.5.0-a4.pdf",
+          "sha256": "2c7751902ac8e64dc80011bfe5e561ebeb46e69a18b63bdc1c722c6532b56a0c"
+        },
+        {
+          "paper": "letter",
+          "filename": "onerom-cli-manual-0.5.0-letter.pdf",
+          "sha256": "f30edf6cd62f25199f5aac783cf7bb02dc7d1d5ec9af6c1db7db9c1925eae768"
+        }
+      ]
     }
   ]
 }

@@ -25,6 +25,11 @@
       "name": "drivewire",
       "type": "user",
       "path": "user/drivewire"
+    },
+    {
+      "name": "ext-flash",
+      "type": "user",
+      "path": "user/ext-flash"
     }
   ]
 }

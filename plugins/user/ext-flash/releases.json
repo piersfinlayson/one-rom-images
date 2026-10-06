@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "display_name": "One ROM External Flash Tester",
+  "description": "Tests a One ROM's external flash chip is present and functional",
+  "author": "Piers Finlayson",
+  "source": "https://github.com/piersfinlayson/one-rom",
+  "license": "MIT",
+  "latest": "0.1.0",
+  "releases": [
+    {
+      "version": "0.1.0",
+      "path": "v0.1.0",
+      "filename": "plugin.bin",
+      "sha256": "3fbbea70f67ea9cf2c3104ac87c4c4f6ab6def9d66af518434a0a54d7e0c68b2",
+      "api_version": 1,
+      "plugin_type": "user",
+      "min_fw_version": "0.8.0"
+    }
+  ]
+}

@@ -128,8 +128,23 @@
                     "description": "An Amiga Kickstart bootloader reference implementation. 256KB and 512KB images.",
                     "machine": "amiga",
                     "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/68k/amiga-boot",
-                    "latest": "v0.1.1",
+                    "latest": "v0.1.2",
                     "versions": [
+                        {
+                            "version": "v0.1.2",
+                            "files": [
+                                {
+                                    "file": "amiga_boot_256k.bin",
+                                    "variant": "256k",
+                                    "sha256": "c4e9053b9398436ef3401dd764b81f9d3b8864890073ee9ea11c009f378b9808"
+                                },
+                                {
+                                    "file": "amiga_boot_512k.bin",
+                                    "variant": "512k",
+                                    "sha256": "619ee395f064344f1affa1b6fffc501067aee040cbbdbf8144a799d8bf7f7d2a"
+                                }
+                            ]
+                        },
                         {
                             "version": "v0.1.1",
                             "files": [

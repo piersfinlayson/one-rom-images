@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "latest": {
+    "no-board": "0.4.0",
+    "fire-24-a": "0.4.0",
+    "fire-24-c": "0.4.0",
+    "fire-24-d": "0.4.0",
+    "fire-24-e": "0.4.0",
+    "fire-24-eadb01": "0.4.0",
+    "fire-24-f": "0.4.0",
+    "fire-24-g": "0.4.0",
+    "fire-24-usb-b": "0.4.0",
+    "fire-28-a": "0.4.0",
+    "fire-28-b": "0.4.0",
+    "fire-28-c": "0.4.0",
+    "fire-28-d": "0.4.0",
+    "fire-32-a": "0.4.0",
+    "fire-32-b": "0.4.0",
+    "fire-32-c": "0.4.0",
+    "fire-40-a": "0.4.0",
+    "fire-40-b": "0.4.0",
+    "fire-40-c": "0.4.0"
+  },
+  "releases": [
+    {
+      "version": "0.4.0",
+      "path": "https://github.com/piersfinlayson/one-rom/releases/download/lab-v0.4.0",
+      "boards": [
+        {
+          "name": "no-board",
+          "filename": "onerom-lab-no-board-0.4.0.bin",
+          "sha256": "f1d3e74eecf13386cac3f621cefe164cabf0c21e063ee941c032a4d805447244"
+        },
+        {
+          "name": "fire-24-a",
+          "filename": "onerom-lab-fire-24-a-0.4.0.bin",
+          "sha256": "08be95f84242b0688edddc4a1b66eaa2a88b8c603fc19e565e050746c37811de"
+        },
+        {
+          "name": "fire-24-c",
+          "filename": "onerom-lab-fire-24-c-0.4.0.bin",
+          "sha256": "b0b2f1125c0fe019898b0aff5205a3c8afa7b04c4bba821eb93765b2794a5c0c"
+        },
+        {
+          "name": "fire-24-d",
+          "filename": "onerom-lab-fire-24-d-0.4.0.bin",
+          "sha256": "225dd1d24305baccc277780813782837d516bb31488fa79138e5e5a013ff8b67"
+        },
+        {
+          "name": "fire-24-e",
+          "filename": "onerom-lab-fire-24-e-0.4.0.bin",
+          "sha256": "0c04155cfce2ce1f747314d8254882c709d2aea784fc18598641f974a8c18151"
+        },
+        {
+          "name": "fire-24-eadb01",
+          "filename": "onerom-lab-fire-24-eadb01-0.4.0.bin",
+          "sha256": "2861ab54168b9652e8e852f33d49f216438353e9666d09c45579825791cae21a"
+        },
+        {
+          "name": "fire-24-f",
+          "filename": "onerom-lab-fire-24-f-0.4.0.bin",
+          "sha256": "40dd9f4c925f0cfee47b91c9770623006b3bf29a6a2da2e281a6d5e05e6ea419"
+        },
+        {
+          "name": "fire-24-g",
+          "filename": "onerom-lab-fire-24-g-0.4.0.bin",
+          "sha256": "ff1fd5342ff79e054a86021f173b3bb0244e5147f63e5c9f7783a02e6536cb2f"
+        },
+        {
+          "name": "fire-24-usb-b",
+          "filename": "onerom-lab-fire-24-usb-b-0.4.0.bin",
+          "sha256": "fb349afb42f868dca1ad814a72c4c4cc03914851ecdf3d2ee914a2f1b07738b8"
+        },
+        {
+          "name": "fire-28-a",
+          "filename": "onerom-lab-fire-28-a-0.4.0.bin",
+          "sha256": "5c3b7c31e6e245f1d0b86750c2c74fa579b9fd2f5bf875437a8609a7a91a5f59"
+        },
+        {
+          "name": "fire-28-b",
+          "filename": "onerom-lab-fire-28-b-0.4.0.bin",
+          "sha256": "945147eac98a7882fc3a64f329e98958a48dd483640613e33d1e68e4817c9d96"
+        },
+        {
+          "name": "fire-28-c",
+          "filename": "onerom-lab-fire-28-c-0.4.0.bin",
+          "sha256": "31d4e7f904bbb6e2e4c5ea64bb728777c2390e102a9e121e550bd52f0c6ab3c0"
+        },
+        {
+          "name": "fire-28-d",
+          "filename": "onerom-lab-fire-28-d-0.4.0.bin",
+          "sha256": "0e346759126c76282b1734d74202323b8a23df374a42369dfe4cb484a0a8d683"
+        },
+        {
+          "name": "fire-32-a",
+          "filename": "onerom-lab-fire-32-a-0.4.0.bin",
+          "sha256": "cbc1070b54ca467e961bfa4b2c9f9722181e28d4b0f107669b9056c0b02d44f4"
+        },
+        {
+          "name": "fire-32-b",
+          "filename": "onerom-lab-fire-32-b-0.4.0.bin",
+          "sha256": "eab16fdba7e4740b43d31756c2d85488b38c30472405f70aa6264a0789e74ed0"
+        },
+        {
+          "name": "fire-32-c",
+          "filename": "onerom-lab-fire-32-c-0.4.0.bin",
+          "sha256": "e45a4d7bdf48d5d909d29429a79ddeb7a9d486474f0e8fa8dc84d825b85d9304"
+        },
+        {
+          "name": "fire-40-a",
+          "filename": "onerom-lab-fire-40-a-0.4.0.bin",
+          "sha256": "729ae513f8dff9fcd97bec1b6fc7574d726f87d634d7fabeb91913cc0893240b"
+        },
+        {
+          "name": "fire-40-b",
+          "filename": "onerom-lab-fire-40-b-0.4.0.bin",
+          "sha256": "52d552b4e08ff21b5846642fe71df92c8695bdcd7df803fd07f3c8e93e36a6c9"
+        },
+        {
+          "name": "fire-40-c",
+          "filename": "onerom-lab-fire-40-c-0.4.0.bin",
+          "sha256": "b39ca241573c9bc510c21eaae163584a44e518b613e866a433d7193e37ad63c7"
+        }
+      ]
+    }
+  ]
+}

@@ -35,6 +35,7 @@
         "configs/pincoder-2021-sys346.json",
         "configs/dragon32.json",
         "configs/colecovision.json",
-        "configs/oric-1.json"
+        "configs/oric-1.json",
+        "configs/28-apple2e-bootloader.json"
     ]
 }

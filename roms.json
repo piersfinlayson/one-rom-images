@@ -718,6 +718,131 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "id": "amiga-rbcp-term",
+                    "name": "Amiga RBCP Terminal",
+                    "description": "Talks to a device over an RBCP pipe (USB) from an Amiga. 256KB and 512KB images.",
+                    "machine": "amiga",
+                    "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/68k/amiga-rbcp-term",
+                    "latest": "v0.1.0",
+                    "versions": [
+                        {
+                            "version": "v0.1.0",
+                            "files": [
+                                {
+                                    "file": "amiga_term_256k.bin",
+                                    "variant": "256k",
+                                    "sha256": "3fde7d5ab71dcd4e39639bc2e8d440ab0a4442df8cf52d5718064257c687ddf5"
+                                },
+                                {
+                                    "file": "amiga_term_512k.bin",
+                                    "variant": "512k",
+                                    "sha256": "899f5806e5a535b92beaef55fe21d8b2b47395e05506dac163f6bc1bcd0214c1"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "amiga-led-test",
+                    "name": "Amiga RBCP LED Tester",
+                    "description": "Drives a device's LEDs from an Amiga. 256KB and 512KB images.",
+                    "machine": "amiga",
+                    "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/68k/amiga-led-test",
+                    "latest": "v0.1.0",
+                    "versions": [
+                        {
+                            "version": "v0.1.0",
+                            "files": [
+                                {
+                                    "file": "amiga_led_test_256k.bin",
+                                    "variant": "256k",
+                                    "sha256": "919b500158e56dd8b1f271ad752ce4ef29e86159c5a2e528e5b3e1bc55375053"
+                                },
+                                {
+                                    "file": "amiga_led_test_512k.bin",
+                                    "variant": "512k",
+                                    "sha256": "5e7c2f3a569e40f60eddb6ebf7185a7b851fc10909fbf6402f1449fbb2b5d0a9"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "amiga-aux-io",
+                    "name": "Amiga RBCP Aux I/O",
+                    "description": "Drives and reads a device's auxiliary (GPIO) pins from an Amiga. 256KB and 512KB images.",
+                    "machine": "amiga",
+                    "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/68k/amiga-aux-io",
+                    "latest": "v0.1.0",
+                    "versions": [
+                        {
+                            "version": "v0.1.0",
+                            "files": [
+                                {
+                                    "file": "amiga_auxio_256k.bin",
+                                    "variant": "256k",
+                                    "sha256": "a3bb3be1f26e6232f682f741a60faaa2436aaf8ea3ede013acc10ce40d412d3b"
+                                },
+                                {
+                                    "file": "amiga_auxio_512k.bin",
+                                    "variant": "512k",
+                                    "sha256": "285db9308a1f1e128a879d92add0c9272158e74fc6e861a3a01f6129ed0ce0ba"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "amiga-pipe-test",
+                    "name": "Amiga RBCP Pipe Throughput Test",
+                    "description": "Measures how many bytes an Amiga can push through an RBCP pipe (USB). 256KB and 512KB images.",
+                    "machine": "amiga",
+                    "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/68k/amiga-pipe-test",
+                    "latest": "v0.1.0",
+                    "versions": [
+                        {
+                            "version": "v0.1.0",
+                            "files": [
+                                {
+                                    "file": "amiga_pipe_256k.bin",
+                                    "variant": "256k",
+                                    "sha256": "15f9fa1e6806106df0b0395d7ea5fea053f055e4572f3cce20e9176cea79ac83"
+                                },
+                                {
+                                    "file": "amiga_pipe_512k.bin",
+                                    "variant": "512k",
+                                    "sha256": "be6afd83542e0f080ed1dce32193f4a387ccf9735cd27c2bd6dd27c973503a6e"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "amiga-rbcp-stress",
+                    "name": "Amiga RBCP Reliability Meter",
+                    "description": "Measures how reliably an Amiga and a device communicate over RBCP. 256KB and 512KB images.",
+                    "machine": "amiga",
+                    "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/68k/amiga-rbcp-stress",
+                    "latest": "v0.1.0",
+                    "versions": [
+                        {
+                            "version": "v0.1.0",
+                            "files": [
+                                {
+                                    "file": "amiga_meter_256k.bin",
+                                    "variant": "256k",
+                                    "sha256": "1ce2fc61511eae182c2afff6b1a22f1f8b2a2e538b177c31d3cd06bcdae9ffe1"
+                                },
+                                {
+                                    "file": "amiga_meter_512k.bin",
+                                    "variant": "512k",
+                                    "sha256": "18b72799cb02eef17021265c8d74daee55a6e08a478e66aaa723eadc0c7cd91a"
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         }

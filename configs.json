@@ -36,6 +36,8 @@
         "configs/dragon32.json",
         "configs/colecovision.json",
         "configs/oric-1.json",
-        "configs/28-apple2e-bootloader.json"
+        "configs/28-apple2e-bootloader.json",
+        "configs/40-amiga-bootloader-256k.json",
+        "configs/40l-amiga-bootloader-512k.json"
     ]
 }

@@ -41,11 +41,25 @@
                 {
                     "id": "c64-boot",
                     "name": "C64 RBCP Reference Bootloader",
-                    "description": "A C64 kernal bootloader reference implementation",
+                    "description": "A C64 kernal bootloader reference implementation. Kernal and combined 16KB images.",
                     "machine": "c64",
                     "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/6502/c64-boot",
-                    "latest": "v0.1.1",
+                    "latest": "v0.1.2",
                     "versions": [
+                        {
+                            "version": "v0.1.2",
+                            "files": [
+                                {
+                                    "file": "c64_boot.bin",
+                                    "sha256": "be2ed62332a3d4aca6f22f826281df3852dee55ae955843719b18d38b0857b77"
+                                },
+                                {
+                                    "file": "c64_boot_combined.bin",
+                                    "variant": "combined",
+                                    "sha256": "c2818fccff1b0dbdf4f34d82efbd04c7673ad6201b95512a406093fcf96e91cb"
+                                }
+                            ]
+                        },
                         {
                             "version": "v0.1.1",
                             "files": [

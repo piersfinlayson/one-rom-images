@@ -44,8 +44,22 @@
                     "description": "A C64 kernal bootloader reference implementation. Kernal and combined 16KB images.",
                     "machine": "c64",
                     "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/6502/c64-boot",
-                    "latest": "v0.1.2",
+                    "latest": "v0.1.3",
                     "versions": [
+                        {
+                            "version": "v0.1.3",
+                            "files": [
+                                {
+                                    "file": "c64_boot.bin",
+                                    "sha256": "50416297afd5919e93c77a0b900fa23c439d03d0a813f9eb76f919ed6105cb0a"
+                                },
+                                {
+                                    "file": "c64_boot_combined.bin",
+                                    "variant": "combined",
+                                    "sha256": "6cd81f7d762601f16dba21bb2082b8df9aaf3ee935f734035de824d64ba4d4f4"
+                                }
+                            ]
+                        },
                         {
                             "version": "v0.1.2",
                             "files": [
@@ -197,8 +211,28 @@
                     "description": "Talks to a device over an RBCP pipe (USB) from a Commodore 64. Kernal, BASIC and combined 16KB images.",
                     "machine": "c64",
                     "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/6502/c64-rbcp-term",
-                    "latest": "v0.1.0",
+                    "latest": "v0.1.1",
                     "versions": [
+                        {
+                            "version": "v0.1.1",
+                            "files": [
+                                {
+                                    "file": "c64_term_kernal.bin",
+                                    "variant": "kernal",
+                                    "sha256": "5434e6520bdaf84b7288907afc6633fd7c95bc8bf5eb46c8343989caa4b54136"
+                                },
+                                {
+                                    "file": "c64_term_basic.bin",
+                                    "variant": "basic",
+                                    "sha256": "7b76f28e71d7ace87093e4e33134216408a650739a310700da2cf0e609ae71e5"
+                                },
+                                {
+                                    "file": "c64_term_combined.bin",
+                                    "variant": "combined",
+                                    "sha256": "245b565eb130827e8036a734dba1418f56c5accedf960cbab3d1c5e8aa02c0f3"
+                                }
+                            ]
+                        },
                         {
                             "version": "v0.1.0",
                             "files": [
@@ -227,8 +261,23 @@
                     "description": "Talks to a device over an RBCP pipe (USB) from a Commodore VIC-20. PAL and NTSC images.",
                     "machine": "vic20",
                     "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/6502/vic20-rbcp-term",
-                    "latest": "v0.1.0",
+                    "latest": "v0.1.1",
                     "versions": [
+                        {
+                            "version": "v0.1.1",
+                            "files": [
+                                {
+                                    "file": "vic20_term_pal.bin",
+                                    "variant": "pal",
+                                    "sha256": "e0b4aac6cfed5402c0c5395ae98435831b948b105eeecdf398c9cac390443908"
+                                },
+                                {
+                                    "file": "vic20_term_ntsc.bin",
+                                    "variant": "ntsc",
+                                    "sha256": "c76369f33fc61c09cb9eb0c284d39dc7682645960cfefe4de45da193b90bcffc"
+                                }
+                            ]
+                        },
                         {
                             "version": "v0.1.0",
                             "files": [
@@ -252,8 +301,17 @@
                     "description": "Talks to a device over an RBCP pipe (USB) from an Apple IIe.",
                     "machine": "apple2",
                     "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/6502/apple2-rbcp-term",
-                    "latest": "v0.1.0",
+                    "latest": "v0.1.1",
                     "versions": [
+                        {
+                            "version": "v0.1.1",
+                            "files": [
+                                {
+                                    "file": "apple2_term.bin",
+                                    "sha256": "b9cabaaeb2e610d6f0c5ade62686c068d5c401db83cf55001a1adbfd076787de"
+                                }
+                            ]
+                        },
                         {
                             "version": "v0.1.0",
                             "files": [
@@ -271,8 +329,28 @@
                     "description": "Drives and reads a device's auxiliary (GPIO) pins from a Commodore 64. Kernal, BASIC and combined 16KB images.",
                     "machine": "c64",
                     "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/6502/c64-aux-io",
-                    "latest": "v0.1.0",
+                    "latest": "v0.1.1",
                     "versions": [
+                        {
+                            "version": "v0.1.1",
+                            "files": [
+                                {
+                                    "file": "c64_auxio_kernal.bin",
+                                    "variant": "kernal",
+                                    "sha256": "f638049153f1e2e29376b25a03b03ba48e3d78670a582e00864e0e4593cb6f14"
+                                },
+                                {
+                                    "file": "c64_auxio_basic.bin",
+                                    "variant": "basic",
+                                    "sha256": "08be20b5e9b220681b0fbf559d5599722e4fca4dd08f0684b384ef3e0f097e91"
+                                },
+                                {
+                                    "file": "c64_auxio_combined.bin",
+                                    "variant": "combined",
+                                    "sha256": "50a02745263c3f41436833427e1fa618312d8f2e3ba39039097b5f29451c6916"
+                                }
+                            ]
+                        },
                         {
                             "version": "v0.1.0",
                             "files": [
@@ -301,8 +379,23 @@
                     "description": "Drives and reads a device's auxiliary (GPIO) pins from a Commodore VIC-20. PAL and NTSC images.",
                     "machine": "vic20",
                     "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/6502/vic20-aux-io",
-                    "latest": "v0.1.0",
+                    "latest": "v0.1.1",
                     "versions": [
+                        {
+                            "version": "v0.1.1",
+                            "files": [
+                                {
+                                    "file": "vic20_auxio_pal.bin",
+                                    "variant": "pal",
+                                    "sha256": "fbc886c6b4a662ae18d639440158382b26b32b773181e148c6735f39e8959de5"
+                                },
+                                {
+                                    "file": "vic20_auxio_ntsc.bin",
+                                    "variant": "ntsc",
+                                    "sha256": "a40813049d0aa777f4d5f8017dd65c02ebe39d5e9b9caa28bef2504d00acd856"
+                                }
+                            ]
+                        },
                         {
                             "version": "v0.1.0",
                             "files": [
@@ -326,8 +419,17 @@
                     "description": "Drives and reads a device's auxiliary (GPIO) pins from an Apple IIe.",
                     "machine": "apple2",
                     "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/6502/apple2-aux-io",
-                    "latest": "v0.1.0",
+                    "latest": "v0.1.1",
                     "versions": [
+                        {
+                            "version": "v0.1.1",
+                            "files": [
+                                {
+                                    "file": "apple2_auxio.bin",
+                                    "sha256": "853b59a8dfa0631af926c0fd302b4718fdf236d5c4711aed8ea0303dca9ab21c"
+                                }
+                            ]
+                        },
                         {
                             "version": "v0.1.0",
                             "files": [
@@ -345,8 +447,28 @@
                     "description": "Measures how reliably a Commodore 64 and a device communicate over RBCP. Kernal, BASIC and combined 16KB images.",
                     "machine": "c64",
                     "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/6502/c64-rbcp-stress",
-                    "latest": "v0.1.0",
+                    "latest": "v0.1.1",
                     "versions": [
+                        {
+                            "version": "v0.1.1",
+                            "files": [
+                                {
+                                    "file": "c64_meter_kernal.bin",
+                                    "variant": "kernal",
+                                    "sha256": "32d389b9381e9530b0c88dc323e10029fcd6c1a675c643408b4a6fa3927a2f97"
+                                },
+                                {
+                                    "file": "c64_meter_basic.bin",
+                                    "variant": "basic",
+                                    "sha256": "9f6d4d21e0ddfb2172b2a208a0879b987d1ec3646c50290b1485780b1a910661"
+                                },
+                                {
+                                    "file": "c64_meter_combined.bin",
+                                    "variant": "combined",
+                                    "sha256": "161d878e5a5ca9c02a4b61063c42651d6a525f9c665b61cbdade1e6b5a6cc475"
+                                }
+                            ]
+                        },
                         {
                             "version": "v0.1.0",
                             "files": [
@@ -375,8 +497,23 @@
                     "description": "Measures how reliably a Commodore VIC-20 and a device communicate over RBCP. PAL and NTSC images.",
                     "machine": "vic20",
                     "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/6502/vic20-rbcp-stress",
-                    "latest": "v0.1.0",
+                    "latest": "v0.1.1",
                     "versions": [
+                        {
+                            "version": "v0.1.1",
+                            "files": [
+                                {
+                                    "file": "vic20_meter_pal.bin",
+                                    "variant": "pal",
+                                    "sha256": "97189785f9812553a17b4d3675c1c0a548ea70d098ddabc5fb5cf0b7bec9e814"
+                                },
+                                {
+                                    "file": "vic20_meter_ntsc.bin",
+                                    "variant": "ntsc",
+                                    "sha256": "67d9bbf68290c21511f9f668c29887e9de35d3e7711d1f22578e57acc94a5e59"
+                                }
+                            ]
+                        },
                         {
                             "version": "v0.1.0",
                             "files": [
@@ -400,8 +537,17 @@
                     "description": "Measures how reliably an Apple IIe and a device communicate over RBCP.",
                     "machine": "apple2",
                     "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/6502/apple2-rbcp-stress",
-                    "latest": "v0.1.0",
+                    "latest": "v0.1.1",
                     "versions": [
+                        {
+                            "version": "v0.1.1",
+                            "files": [
+                                {
+                                    "file": "apple2_meter.bin",
+                                    "sha256": "d88bae1039c4a7a1c91c1fb7aff57ceddb723674f93bd03ec268cb45d05ce1cf"
+                                }
+                            ]
+                        },
                         {
                             "version": "v0.1.0",
                             "files": [
@@ -419,8 +565,28 @@
                     "description": "Measures how many bytes a Commodore 64 can push through an RBCP pipe (USB). Kernal, BASIC and combined 16KB images.",
                     "machine": "c64",
                     "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/6502/c64-pipe-test",
-                    "latest": "v0.1.0",
+                    "latest": "v0.1.1",
                     "versions": [
+                        {
+                            "version": "v0.1.1",
+                            "files": [
+                                {
+                                    "file": "c64_pipe_kernal.bin",
+                                    "variant": "kernal",
+                                    "sha256": "e46647b05fdf35e8e420c6e14207e1a4ac078dd17c25eb9534382efe5d1b7fef"
+                                },
+                                {
+                                    "file": "c64_pipe_basic.bin",
+                                    "variant": "basic",
+                                    "sha256": "5a571cdf8910fb86e802b92d6123fcfcd1a985cba7124720eddb26433e6deed1"
+                                },
+                                {
+                                    "file": "c64_pipe_combined.bin",
+                                    "variant": "combined",
+                                    "sha256": "55e8dd51834546f50a760c98855eafefcfc17f60c0ea46bd57e017d4b0370e02"
+                                }
+                            ]
+                        },
                         {
                             "version": "v0.1.0",
                             "files": [
@@ -449,8 +615,23 @@
                     "description": "Measures how many bytes a Commodore VIC-20 can push through an RBCP pipe (USB). Needs the 3KB RAM expansion. PAL and NTSC images.",
                     "machine": "vic20",
                     "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/6502/vic20-pipe-test",
-                    "latest": "v0.1.0",
+                    "latest": "v0.1.1",
                     "versions": [
+                        {
+                            "version": "v0.1.1",
+                            "files": [
+                                {
+                                    "file": "vic20_pipe_pal.bin",
+                                    "variant": "pal",
+                                    "sha256": "39eb96ff4c88f7e90fddaac62ee1654c6f23962a52db7b684780717d31dba9f8"
+                                },
+                                {
+                                    "file": "vic20_pipe_ntsc.bin",
+                                    "variant": "ntsc",
+                                    "sha256": "b1d7e62fe5625e102d9b9664a19881a66e4db9895617b3c76e53f93415b74f67"
+                                }
+                            ]
+                        },
                         {
                             "version": "v0.1.0",
                             "files": [
@@ -474,8 +655,23 @@
                     "description": "Measures how many bytes an Apple IIe can push through an RBCP pipe (USB). 50Hz and 60Hz images.",
                     "machine": "apple2",
                     "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/6502/apple2-pipe-test",
-                    "latest": "v0.1.0",
+                    "latest": "v0.1.1",
                     "versions": [
+                        {
+                            "version": "v0.1.1",
+                            "files": [
+                                {
+                                    "file": "apple2_pipe_pal.bin",
+                                    "variant": "pal",
+                                    "sha256": "7753dbeb28ff4997d5ab29e25f01cff15baa0cac302228fb98eeae7c4abaec8d"
+                                },
+                                {
+                                    "file": "apple2_pipe_ntsc.bin",
+                                    "variant": "ntsc",
+                                    "sha256": "1cb48841be7228d0e30e62aa9cfa2f13e3dff61e973509f7e3fee88f0661ca1e"
+                                }
+                            ]
+                        },
                         {
                             "version": "v0.1.0",
                             "files": [
@@ -488,6 +684,36 @@
                                     "file": "apple2_pipe_ntsc.bin",
                                     "variant": "ntsc",
                                     "sha256": "b8a695f9e3938784cfaf790c211981ed9d54a5cf28c881415d6c5772df95d4c8"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "c64-led-test",
+                    "name": "C64 RBCP LED Tester",
+                    "description": "Drives a device's LEDs from a Commodore 64. Kernal, BASIC and combined 16KB images.",
+                    "machine": "c64",
+                    "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/6502/c64-led-test",
+                    "latest": "v0.1.1",
+                    "versions": [
+                        {
+                            "version": "v0.1.1",
+                            "files": [
+                                {
+                                    "file": "c64_led_kernal.bin",
+                                    "variant": "kernal",
+                                    "sha256": "1617f6bdb969ea3b5aaba44c11d44d2f533e2171d9968540d6fbbe72e4a94ab1"
+                                },
+                                {
+                                    "file": "c64_led_basic.bin",
+                                    "variant": "basic",
+                                    "sha256": "66a253106609f81e8577849c0abb71e5cdcaedde141df4de5a8e178b67271628"
+                                },
+                                {
+                                    "file": "c64_led_combined.bin",
+                                    "variant": "combined",
+                                    "sha256": "19641e86cf9afc795c901c9572d92c70f634f330aef7d60388736bcbbd17941d"
                                 }
                             ]
                         }

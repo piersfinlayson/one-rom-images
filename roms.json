@@ -105,8 +105,17 @@
                     "description": "A VIC-20 kernal bootloader reference implementation",
                     "machine": "vic20",
                     "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/6502/vic20-boot",
-                    "latest": "v0.1.1",
+                    "latest": "v0.2.0",
                     "versions": [
+                        {
+                            "version": "v0.2.0",
+                            "files": [
+                                {
+                                    "file": "vic20_boot.bin",
+                                    "sha256": "72a1c66b98988c5deb5a3ccbc7badc2d2368743b36aa06eccad2a904bc87f5b0"
+                                }
+                            ]
+                        },
                         {
                             "version": "v0.1.1",
                             "files": [
@@ -272,11 +281,20 @@
                 {
                     "id": "vic20-rbcp-term",
                     "name": "VIC-20 RBCP Terminal",
-                    "description": "Talks to a device over an RBCP pipe (USB) from a Commodore VIC-20. PAL and NTSC images.",
+                    "description": "Talks to a device over an RBCP pipe (USB) from a Commodore VIC-20. PAL and NTSC.",
                     "machine": "vic20",
                     "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/6502/vic20-rbcp-term",
-                    "latest": "v0.1.1",
+                    "latest": "v0.2.0",
                     "versions": [
+                        {
+                            "version": "v0.2.0",
+                            "files": [
+                                {
+                                    "file": "vic20_term.bin",
+                                    "sha256": "88d04e0ed7c3c65f46e88fc0566c6a255a6fd9fd40ac42e7242416966d829079"
+                                }
+                            ]
+                        },
                         {
                             "version": "v0.1.1",
                             "files": [
@@ -390,11 +408,20 @@
                 {
                     "id": "vic20-aux-io",
                     "name": "VIC-20 RBCP Aux I/O",
-                    "description": "Drives and reads a device's auxiliary (GPIO) pins from a Commodore VIC-20. PAL and NTSC images.",
+                    "description": "Drives and reads a device's auxiliary (GPIO) pins from a Commodore VIC-20. PAL and NTSC.",
                     "machine": "vic20",
                     "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/6502/vic20-aux-io",
-                    "latest": "v0.1.1",
+                    "latest": "v0.2.0",
                     "versions": [
+                        {
+                            "version": "v0.2.0",
+                            "files": [
+                                {
+                                    "file": "vic20_auxio.bin",
+                                    "sha256": "40b1550f8303e45f776c9d4ffc08e8b51a60391c82467ed36e69cee7a7c2eb33"
+                                }
+                            ]
+                        },
                         {
                             "version": "v0.1.1",
                             "files": [
@@ -508,11 +535,20 @@
                 {
                     "id": "vic20-rbcp-stress",
                     "name": "VIC-20 RBCP Reliability Meter",
-                    "description": "Measures how reliably a Commodore VIC-20 and a device communicate over RBCP. PAL and NTSC images.",
+                    "description": "Measures how reliably a Commodore VIC-20 and a device communicate over RBCP. PAL and NTSC.",
                     "machine": "vic20",
                     "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/6502/vic20-rbcp-stress",
-                    "latest": "v0.1.1",
+                    "latest": "v0.2.0",
                     "versions": [
+                        {
+                            "version": "v0.2.0",
+                            "files": [
+                                {
+                                    "file": "vic20_meter.bin",
+                                    "sha256": "7a1d3fbe12469844628564eee7892fb4a4721e3c422c489adfd3735c3aec200c"
+                                }
+                            ]
+                        },
                         {
                             "version": "v0.1.1",
                             "files": [
@@ -626,11 +662,20 @@
                 {
                     "id": "vic20-pipe-test",
                     "name": "VIC-20 RBCP Pipe Throughput Test",
-                    "description": "Measures how many bytes a Commodore VIC-20 can push through an RBCP pipe (USB). Needs the 3KB RAM expansion. PAL and NTSC images.",
+                    "description": "Measures how many bytes a Commodore VIC-20 can push through an RBCP pipe (USB). Needs the 3KB RAM expansion. PAL and NTSC.",
                     "machine": "vic20",
                     "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/6502/vic20-pipe-test",
-                    "latest": "v0.1.1",
+                    "latest": "v0.2.0",
                     "versions": [
+                        {
+                            "version": "v0.2.0",
+                            "files": [
+                                {
+                                    "file": "vic20_pipe.bin",
+                                    "sha256": "875c71162c455caea6adeffb872c32b3094df38dc96fc1d4bf539a21d8cf5739"
+                                }
+                            ]
+                        },
                         {
                             "version": "v0.1.1",
                             "files": [

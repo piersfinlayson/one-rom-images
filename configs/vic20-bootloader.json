@@ -1,8 +1,8 @@
 {
     "$schema": "https://images.onerom.org/configs/schema.json",
     "version": 1,
-    "name": "VIC-20 Bootloader (NTSC)",
-    "description": "Reference bootloader, stock kernal and the RBCP test applications",
+    "name": "VIC-20 Bootloader",
+    "description": "Reference bootloader, PAL and NTSC stock kernals and the RBCP test applications",
     "categories": [
         "computer",
         "commodore",
@@ -33,7 +33,7 @@
             "chips": [
                 {
                     "label": "Bootloader",
-                    "file": "https://images.onerom.org/roms/host-control/vic20-boot/latest/vic20_boot_ntsc.bin",
+                    "file": "https://images.onerom.org/roms/host-control/vic20-boot/latest/vic20_boot.bin",
                     "type": "2364",
                     "cs1": "active_low"
                 }
@@ -43,7 +43,18 @@
             "type": "single",
             "chips": [
                 {
-                    "label": "Kernal 901486-06",
+                    "label": "Stock Kernal (PAL)",
+                    "file": "http://www.zimmers.net/anonftp/pub/cbm/firmware/computers/vic20/kernal.901486-07.bin",
+                    "type": "2364",
+                    "cs1": "active_low"
+                }
+            ]
+        },
+        {
+            "type": "single",
+            "chips": [
+                {
+                    "label": "Stock Kernal (NTSC)",
                     "file": "http://www.zimmers.net/anonftp/pub/cbm/firmware/computers/vic20/kernal.901486-06.bin",
                     "type": "2364",
                     "cs1": "active_low"
@@ -55,7 +66,7 @@
             "chips": [
                 {
                     "label": "Terminal",
-                    "file": "https://images.onerom.org/roms/host-control/vic20-rbcp-term/latest/vic20_term_ntsc.bin",
+                    "file": "https://images.onerom.org/roms/host-control/vic20-rbcp-term/latest/vic20_term.bin",
                     "type": "2364",
                     "cs1": "active_low"
                 }
@@ -66,7 +77,7 @@
             "chips": [
                 {
                     "label": "Aux I/O Tester",
-                    "file": "https://images.onerom.org/roms/host-control/vic20-aux-io/latest/vic20_auxio_ntsc.bin",
+                    "file": "https://images.onerom.org/roms/host-control/vic20-aux-io/latest/vic20_auxio.bin",
                     "type": "2364",
                     "cs1": "active_low"
                 }
@@ -77,7 +88,7 @@
             "chips": [
                 {
                     "label": "Pipe Throughput",
-                    "file": "https://images.onerom.org/roms/host-control/vic20-pipe-test/latest/vic20_pipe_ntsc.bin",
+                    "file": "https://images.onerom.org/roms/host-control/vic20-pipe-test/latest/vic20_pipe.bin",
                     "type": "2364",
                     "cs1": "active_low"
                 }
@@ -88,7 +99,7 @@
             "chips": [
                 {
                     "label": "Reliability Meter",
-                    "file": "https://images.onerom.org/roms/host-control/vic20-rbcp-stress/latest/vic20_meter_ntsc.bin",
+                    "file": "https://images.onerom.org/roms/host-control/vic20-rbcp-stress/latest/vic20_meter.bin",
                     "type": "2364",
                     "cs1": "active_low"
                 }

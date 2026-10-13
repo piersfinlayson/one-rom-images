@@ -105,8 +105,17 @@
                     "description": "A VIC-20 kernal bootloader reference implementation",
                     "machine": "vic20",
                     "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/6502/vic20-boot",
-                    "latest": "v0.2.0",
+                    "latest": "v0.2.1",
                     "versions": [
+                        {
+                            "version": "v0.2.1",
+                            "files": [
+                                {
+                                    "file": "vic20_boot.bin",
+                                    "sha256": "42dcc050297bdb35936e23d575c88bc7b7068fe2abcf1afc9feb77165f4b59f2"
+                                }
+                            ]
+                        },
                         {
                             "version": "v0.2.0",
                             "files": [
@@ -408,11 +417,20 @@
                 {
                     "id": "vic20-aux-io",
                     "name": "VIC-20 RBCP Aux I/O",
-                    "description": "Drives and reads a device's auxiliary (GPIO) pins from a Commodore VIC-20. PAL and NTSC.",
+                    "description": "Drives and reads a device's auxiliary (GPIO) pins from a Commodore VIC-20. Needs a 3KB RAM expansion. PAL and NTSC.",
                     "machine": "vic20",
                     "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/6502/vic20-aux-io",
-                    "latest": "v0.2.0",
+                    "latest": "v0.2.1",
                     "versions": [
+                        {
+                            "version": "v0.2.1",
+                            "files": [
+                                {
+                                    "file": "vic20_auxio.bin",
+                                    "sha256": "5583026c92463ce770e42ec34cce18f7b99ea350c8545f37d65720cc6a1e3667"
+                                }
+                            ]
+                        },
                         {
                             "version": "v0.2.0",
                             "files": [
@@ -535,11 +553,20 @@
                 {
                     "id": "vic20-rbcp-stress",
                     "name": "VIC-20 RBCP Reliability Meter",
-                    "description": "Measures how reliably a Commodore VIC-20 and a device communicate over RBCP. PAL and NTSC.",
+                    "description": "Measures how reliably a Commodore VIC-20 and a device communicate over RBCP. Needs a 3KB RAM expansion. PAL and NTSC.",
                     "machine": "vic20",
                     "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/6502/vic20-rbcp-stress",
-                    "latest": "v0.2.0",
+                    "latest": "v0.2.1",
                     "versions": [
+                        {
+                            "version": "v0.2.1",
+                            "files": [
+                                {
+                                    "file": "vic20_meter.bin",
+                                    "sha256": "17f297fc02310ba2b78ea63d57b83704718f3e4fc541f35f026af75c07cd8d9f"
+                                }
+                            ]
+                        },
                         {
                             "version": "v0.2.0",
                             "files": [
@@ -662,11 +689,20 @@
                 {
                     "id": "vic20-pipe-test",
                     "name": "VIC-20 RBCP Pipe Throughput Test",
-                    "description": "Measures how many bytes a Commodore VIC-20 can push through an RBCP pipe (USB). Needs the 3KB RAM expansion. PAL and NTSC.",
+                    "description": "Measures how many bytes a Commodore VIC-20 can push through an RBCP pipe (USB). Needs a 3KB RAM expansion. PAL and NTSC.",
                     "machine": "vic20",
                     "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/6502/vic20-pipe-test",
-                    "latest": "v0.2.0",
+                    "latest": "v0.2.1",
                     "versions": [
+                        {
+                            "version": "v0.2.1",
+                            "files": [
+                                {
+                                    "file": "vic20_pipe.bin",
+                                    "sha256": "127464c685b1404ce1ff9a697b828240313e33558231ce3648168b1f3e41f61e"
+                                }
+                            ]
+                        },
                         {
                             "version": "v0.2.0",
                             "files": [

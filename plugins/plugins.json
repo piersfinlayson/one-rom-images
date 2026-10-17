@@ -30,6 +30,11 @@
       "name": "ext-flash",
       "type": "user",
       "path": "user/ext-flash"
+    },
+    {
+      "name": "usb-throughput",
+      "type": "user",
+      "path": "user/usb-throughput"
     }
   ]
 }

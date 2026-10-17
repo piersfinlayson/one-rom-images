@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "display_name": "One ROM USB Throughput",
+  "description": "Tests data throughput through One ROM's system USB plugin",
+  "author": "Piers Finlayson",
+  "source": "https://github.com/piersfinlayson/one-rom-usb-throughput-plugin",
+  "license": "MIT",
+  "latest": "0.1.0",
+  "releases": [
+    {
+      "version": "0.1.0",
+      "path": "v0.1.0",
+      "filename": "plugin.bin",
+      "sha256": "b734f5b3dfc654f69e6a4fa318a513a7a12f3d7bed4f20ca72466a579e9afa61",
+      "api_version": 1,
+      "plugin_type": "user",
+      "min_fw_version": "0.8.0"
+    }
+  ]
+}

@@ -237,7 +237,7 @@
                 {
                     "id": "amiga-boot",
                     "name": "Amiga RBCP Reference Bootloader",
-                    "description": "An Amiga Kickstart bootloader reference implementation. 256KB and 512KB images.",
+                    "description": "An Amiga Kickstart bootloader reference implementation. 256KB, 512KB and 32-bit images.",
                     "machine": "amiga",
                     "source": "https://github.com/piersfinlayson/rom-bus-control-protocol/tree/main/reference/host/68k/amiga-boot",
                     "latest": "v0.1.5",
@@ -254,6 +254,26 @@
                                     "file": "amiga_boot_512k.bin",
                                     "variant": "512k",
                                     "sha256": "493e6c7452a1f3372d5b8b4871b4aa35091d6c6b4f96ad27d0db7871d72076b6"
+                                },
+                                {
+                                    "file": "amiga_boot_32bit_256k_hi.bin",
+                                    "variant": "32bit-256k-hi",
+                                    "sha256": "d8640c5a17300fb85e34c5a1765bbffc65f29cd2aa1a58d5f6ba9db20892bdc0"
+                                },
+                                {
+                                    "file": "amiga_boot_32bit_256k_lo.bin",
+                                    "variant": "32bit-256k-lo",
+                                    "sha256": "ace6bea7d1ef4f9c41b1c114d508d481a6977cd5040c855e975e064db29fab1b"
+                                },
+                                {
+                                    "file": "amiga_boot_32bit_512k_hi.bin",
+                                    "variant": "32bit-512k-hi",
+                                    "sha256": "a19081a2ce2ed7d5c0ec5bef17e410df9a6c3b64dd40430f064de3050920e857"
+                                },
+                                {
+                                    "file": "amiga_boot_32bit_512k_lo.bin",
+                                    "variant": "32bit-512k-lo",
+                                    "sha256": "1dbbce3979e78e315e4ba21ed4fc37d7cc8f5627cac59da9fb0e263aa5666c2d"
                                 }
                             ]
                         },

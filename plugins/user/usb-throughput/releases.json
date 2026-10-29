@@ -5,8 +5,17 @@
   "author": "Piers Finlayson",
   "source": "https://github.com/piersfinlayson/one-rom-usb-throughput-plugin",
   "license": "MIT",
-  "latest": "0.1.1",
+  "latest": "0.2.0",
   "releases": [
+    {
+      "version": "0.2.0",
+      "path": "v0.2.0",
+      "filename": "plugin.bin",
+      "sha256": "e8275990e3fc3d8f06cdd44eaa5ead7c6f1b22561a27c1e3ba4075ccf4b449ba",
+      "api_version": 1,
+      "plugin_type": "user",
+      "min_fw_version": "0.8.0"
+    },
     {
       "version": "0.1.1",
       "path": "v0.1.1",

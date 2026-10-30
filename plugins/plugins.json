@@ -35,6 +35,11 @@
       "name": "usb-throughput",
       "type": "user",
       "path": "user/usb-throughput"
+    },
+    {
+      "name": "slot-colour",
+      "type": "user",
+      "path": "user/slot-colour"
     }
   ]
 }

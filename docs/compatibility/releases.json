@@ -56,6 +56,22 @@
           "sha256": "4a89e16bbfcb4f76a04f1f11b85ac2919e80098ac1db338107450b12a9acc484"
         }
       ]
+    },
+    {
+      "version": "0.8.1",
+      "path": "v0.8.1",
+      "files": [
+        {
+          "paper": "a4",
+          "filename": "onerom-compatibility-0.8.1-a4.pdf",
+          "sha256": "1eabc6cf32081f97f17e5c4b5ba681829e7113839ad13e6ed109637483b6baa3"
+        },
+        {
+          "paper": "letter",
+          "filename": "onerom-compatibility-0.8.1-letter.pdf",
+          "sha256": "08f1b64281a8e848674e172536bfe866b0a6939b9f38bdb7abc791674b6881aa"
+        }
+      ]
     }
   ]
 }

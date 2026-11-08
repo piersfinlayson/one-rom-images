@@ -40,6 +40,11 @@
       "name": "slot-colour",
       "type": "user",
       "path": "user/slot-colour"
+    },
+    {
+      "name": "ostrich",
+      "type": "user",
+      "path": "user/ostrich"
     }
   ]
 }

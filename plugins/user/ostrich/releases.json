@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "display_name": "Ostrich 2.0 ECU Tuning",
+  "description": "Ostrich 2.0 emulation and ECU datalogging over USB",
+  "author": "Piers Finlayson",
+  "source": "https://github.com/piersfinlayson/one-rom-ostrich",
+  "license": "MIT",
+  "latest": "0.1.0",
+  "releases": [
+    {
+      "version": "0.1.0",
+      "path": "v0.1.0",
+      "filename": "plugin.bin",
+      "sha256": "b12acc42ed83d97b7bb401e4efff41736d939f40fe548a0edd297c86de76a618",
+      "api_version": 1,
+      "plugin_type": "user",
+      "min_fw_version": "0.8.1"
+    }
+  ]
+}

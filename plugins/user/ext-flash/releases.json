@@ -5,8 +5,17 @@
   "author": "Piers Finlayson",
   "source": "https://github.com/piersfinlayson/one-rom",
   "license": "MIT",
-  "latest": "0.1.1",
+  "latest": "0.1.2",
   "releases": [
+    {
+      "version": "0.1.2",
+      "path": "v0.1.2",
+      "filename": "plugin.bin",
+      "sha256": "748a26ce07562ffb6efdcfe8614daa8f551d2d117c7b9a102f34ad913f740803",
+      "api_version": 1,
+      "plugin_type": "user",
+      "min_fw_version": "0.8.0"
+    },
     {
       "version": "0.1.1",
       "path": "v0.1.1",

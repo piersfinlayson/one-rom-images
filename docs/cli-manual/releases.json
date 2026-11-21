@@ -7,7 +7,7 @@
   "sources": [
     "docs/CLI-MANUAL.md"
   ],
-  "latest": "0.6.0",
+  "latest": "0.6.1",
   "releases": [
     {
       "version": "0.3.0",
@@ -86,6 +86,22 @@
           "paper": "letter",
           "filename": "onerom-cli-manual-0.6.0-letter.pdf",
           "sha256": "032586c995e2dde5b8ace8fb86b4bd3e19c36ee2c0ecc2fdc83d576f120a626c"
+        }
+      ]
+    },
+    {
+      "version": "0.6.1",
+      "path": "v0.6.1",
+      "files": [
+        {
+          "paper": "a4",
+          "filename": "onerom-cli-manual-0.6.1-a4.pdf",
+          "sha256": "4434ba7e0f09878d8be5906f10442e715e93dd810583eed7d325541172cad72e"
+        },
+        {
+          "paper": "letter",
+          "filename": "onerom-cli-manual-0.6.1-letter.pdf",
+          "sha256": "f68a687bc717495a3dfb09f37af9aa4d5f543a4559fbbc15504a3f98a024de37"
         }
       ]
     }
